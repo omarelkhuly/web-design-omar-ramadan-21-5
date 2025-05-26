@@ -25,11 +25,11 @@ a {
     display: inline-block;
 }
 
-.d_block{
+.d_block {
     display: block;
 }
 
-.text_white{
+.text_white {
     color: white;
 }
 
@@ -54,12 +54,16 @@ a {
     width: 100%;
 }
 
-.bg_img .container ,
-.bg_img .overly{
+.bg_img .container,
+.bg_img .overly {
     height: 100%;
 }
 
-.bg_img .overly{
+.bg_img .container {
+    padding: 20% 0;
+}
+
+.bg_img .overly {
     background-color: #0000007a;
 }
 
@@ -70,17 +74,17 @@ a {
 }
 
 .bg_img h1,
-.bg_img p{
+.bg_img p {
     color: white;
 }
 
-.banner_aside hr{
+.banner_aside hr {
     width: 25%;
     margin: 5% 0;
     border: solid white 1px;
 }
 
-.banner_aside a{
+.banner_aside a {
     background-color: transparent;
     border: solid 1px white;
     padding: 2%;
@@ -90,18 +94,25 @@ a {
     width: 49%;
     height: 100%;
     padding: 5% 0;
+    text-align: center;
+}
+
+.form_style .bg_color {
+    background: #b7e2d4;
+    margin: 0;
+    padding: 6%;
 }
 
 form.form_banner {
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    background-color: white;
+    padding: 5%;
 }
 
 form.form_banner input {
     margin: 6% 0;
     width: 90%;
     padding: 4%;
-    background: #b7e2d4;
     color: white;
     border: none;
     outline: none;
