@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h2>Let's Chat</h2>
+            <p>Whether you have a question, want to start a project or simply want to connect.</p>
+            <p>Feel free to send me a message in the contact form</p>
+        </div> <!--
+        -->
+        <div class="right">
+            <h2>Contact</h2>
+            <span class="required">* Required</span>
+            <form>
+                <input type="text" name="name" placeholder="Name *" pattern="[A-Za-z]+" title="Alphabets only" required
+                    autocomplete="off">
+                <input type="email" placeholder="Email *" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid email address (e.g. example@domain.com)" required>
+                <input type="text" name="company" placeholder="Company" pattern="[A-Za-z0-9\s]{2,50}"
+                    title="Enter a valid company name (letters and numbers only)" required>
+                <input type="text" name="phone" placeholder="Phone" pattern="[\+0-9\s\-]{8,20}"
+                    title="Enter a valid phone number (digits, spaces, + or - allowed)" required>
+                <textarea placeholder="Message" name="message"></textarea>
+                <input class="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

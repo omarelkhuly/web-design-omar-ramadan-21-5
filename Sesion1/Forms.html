@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .optional {
+            color: red;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .width_height{
+            width: 20%;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>Registration Form</b></h1>
+    <form>
+        <div class="form-group">
+            User id:
+            <input class="width_height" type="text" name="userid" maxlength="12" pattern="\d{5,12}" required >
+            <span class="error">Required and must be of length 5 to 12.</span>
+        </div>
+
+        <div class="form-group">
+            Password:
+            <input class="width_height" type="password" name="password" required minlength="7" maxlength="12">
+            <span class="error">Required and must be of length 7 to 12.</span>
+        </div>
+
+        <div class="form-group">
+            Name:
+            <input class="width_height" type="text" name="name" pattern="[A-Za-z]+" title="Alphabets only" required autocomplete="off">
+            <span class="error">Required and alphabates only.</span>
+        </div>
+
+        <div class="form-group">
+            Address:
+            <input class="width_height" type="text" name="address">
+            <span class="optional">Optional.</span>
+        </div>
+
+        <div class="form-group">
+            Country:
+            <select class="width_height" name="selectCountry" required>
+                <option value="">(Please select a country)</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="egypt">Egypt</option>
+            </select>
+            <span class="error">Required. Must select a country.</span>
+        </div>
+
+        <div class="form-group">
+            ZIP Code:
+            <input class="width_height" type="text" name="zipcode" 
+            required pattern="[0-9]{4,10}" maxlength="10" title="Numbers only">
+            <span class="error">Required. Must be numeric only.</span>
+        </div>
+
+        <div class="form-group">
+            Email:
+            <input class="width_height" type="email" name="email" required>
+            <span class="error">Required. Must be a valid email.</span>
+        </div>
+
+        <div class="form-group">
+            Sex:
+            <input type="radio" name="sex" value="male" required>Male
+            <input type="radio" name="sex" value="female">Female
+            <span class="error">Required.</span>
+        </div>
+
+        <div class="form-group">
+            Language:
+            <input type="checkbox" name="language" value="english" required>English
+            <input type="checkbox" name="language" value="nonenglish">Non English
+            <span class="error">Required.</span>
+        </div>
+
+        <div class="form-group">
+            About:<br>
+            <textarea></textarea>
+            <div class="optional">Optional.</div>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
