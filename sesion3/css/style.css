@@ -12,7 +12,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 /* Global Style */
@@ -33,6 +33,10 @@ a {
     color: white;
 }
 
+.clear {
+    clear: both;
+}
+
 /* Custom Style */
 #nav_parint {
     width: 100%;
@@ -49,6 +53,10 @@ a {
     padding-right: 5%;
 }
 
+#nav_parint ul li a {
+    color: white;
+}
+
 .bg_img {
     background: url(../image/bg1.jpg) center center / cover no-repeat;
     width: 100%;
@@ -60,22 +68,36 @@ a {
 }
 
 .bg_img .container {
-    padding: 20% 0;
+    padding: 3% 0;
 }
 
 .bg_img .overly {
     background-color: #0000007a;
+    width: 100%;
 }
 
 .bg_img aside {
     width: 50%;
     height: 100%;
-    padding: 5% 0;
+    padding: 1% 0;
 }
 
 .bg_img h1,
 .bg_img p {
     color: white;
+}
+
+h1.adrees_class {
+    font-size: 50px;
+}
+
+h1.adrees_class span {
+    color: #FF9B51;
+}
+
+.p_class {
+    margin-bottom: 6%;
+    font-size: 21px;
 }
 
 .banner_aside hr {
@@ -93,14 +115,15 @@ a {
 .form_style {
     width: 49%;
     height: 100%;
-    padding: 5% 0;
+    padding: 1% 0;
     text-align: center;
 }
 
 .form_style .bg_color {
-    background: #b7e2d4;
+    background: #b6e2d3;
     margin: 0;
     padding: 6%;
+    font-size: 20px;
 }
 
 form.form_banner {
@@ -113,8 +136,221 @@ form.form_banner input {
     margin: 6% 0;
     width: 90%;
     padding: 4%;
-    color: white;
+    color: black;
     border: none;
     outline: none;
     font-size: 17px;
+}
+
+input.submit-btn {
+    background-color: #FF9B51;
+    font-size: 25px !important;
+}
+
+.social_media {
+    width: 100%;
+    box-shadow: 0px 20px 8px 4px wheat;
+}
+
+.aside_social_media {
+    float: left;
+    width: 40%;
+}
+
+.icon_font {
+    float: right;
+    width: 60%;
+}
+
+.icon_font ul {
+    padding: 4%;
+    margin: 0;
+}
+
+.icon_font ul li {
+    float: left;
+    width: 10%;
+    text-align: right;
+}
+
+.icon_font_aws {
+    color: #b6e2d3;
+}
+
+.icon_font_aws i {
+    font-size: 45px;
+}
+
+.tabs_class {
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.tabs_boxs {
+    float: left;
+    width: 20%;
+    padding: 15% 0;
+}
+
+.tab_contents {
+    float: left;
+    width: 30%;
+    padding: 12.5% 0;
+}
+
+.image_container {
+    float: right;
+    width: 50%;
+    padding: 10% 0;
+}
+
+.bg_tabs {
+    margin: 0 20% 0 20%;
+    font-size: 18px;
+    border-bottom: 0.5px white solid;
+    background-color: #333333;
+    height: 90px;
+    text-align: center;
+}
+
+.bg_tabs.bg_spicial {
+    background-color: #FF8B38 !important;
+}
+
+.bg_tabs.bg_spicial p {
+    color: black !important;
+}
+
+.bg_tabs p {
+    padding: 13% 0;
+    margin: 0;
+    color: white;
+}
+
+.tab_content p {
+    color: #9E9FA2;
+    margin-bottom: 10%;
+}
+
+.tab_content .p_b_class {
+    margin-bottom: 15% !important;
+}
+
+.download_btn {
+    background-color: #FF8B38;
+    border: solid white 0.5px;
+    color: white;
+    padding: 5%;
+    padding: 4%;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.image_container img {
+    width: 100%;
+}
+
+.image_container .reflection {
+    transform: scaleY(-1);
+    opacity: 0.9;
+    margin-top: -10px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #00000021);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #00000021);
+}
+
+.sub_list_class {
+    width: 100%;
+}
+
+.sub_img_box {
+    width: 45%;
+    float: left;
+    padding: 10% 0;
+}
+
+.sub_list_text {
+    width: 50%;
+    float: right;
+    padding: 10% 0;
+}
+
+.sub_list_text2 {
+    width: 45%;
+    float: left;
+    padding: 10% 0;
+}
+
+.sub_img_box2 {
+    width: 50%;
+    float: right;
+    padding: 10% 0;
+}
+
+.sub_img_box img,
+.sub_img_box2 img {
+    width: 100%;
+    box-shadow: 0 0 6px 7px wheat;
+}
+
+.part_top hr {
+    width: 14%;
+    margin: 0;
+    border: 2px solid #ff8b38;
+}
+
+.overly_sub_list p {
+    color: #9E9FA2;
+}
+
+.part_top p {
+    margin: 5% 0;
+}
+
+.link_icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3%;
+}
+
+.link_icon i {
+    color: #ff8b38;
+    border: 1px solid #ff8b38;
+    border-radius: 50%;
+    padding: 1%;
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.text_class_sub {
+    display: inline-block;
+    width: 85%;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: black;
+    padding: 1%;
+}
+
+.icons_footer {
+    text-align: center;
+}
+
+.icons_footer ul li {
+    padding: 0 2%;
+}
+
+.icons_footer .icon_font_aws i {
+    font-size: 35px !important;
+}
+
+.text_footer {
+    color: #b6e2d3;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 -16px 0;
+    padding: 0;
 }
