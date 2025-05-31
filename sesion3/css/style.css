@@ -1,4 +1,8 @@
 /* Reset Style */
+/* * {
+    border: 0.1px solid;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -328,6 +332,231 @@ input.submit-btn {
     display: inline-block;
     width: 85%;
     margin-left: 5%;
+}
+
+.awesome_class,
+.overly_is_class {
+    width: 100%;
+}
+
+.overly_is_class {
+    padding: 7% 0;
+}
+
+.text_adrees {
+    text-align: center;
+}
+
+h1.address {
+    padding: 2% 0;
+}
+
+p.speech {
+    padding: 2% 0;
+    color: #9E9FA2;
+}
+
+.text_adrees hr {
+    width: 5%;
+    border: 2px solid #ff8b38;
+}
+
+.cards_awesome {
+    padding: 2% 0;
+}
+
+.card_awes {
+    float: left;
+    width: 33.1%;
+    text-align: center;
+}
+
+.card_awes i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    color: #ff8b38;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pricing_class,
+.overly_option {
+    width: 100%;
+}
+
+.pricing_class {
+    padding-bottom: 5%;
+    background-color: #f5f5f5;
+}
+
+.card_price {
+    float: left;
+    width: 31%;
+    margin: 0 1%;
+}
+
+.contan_price {
+    text-align: center;
+    box-shadow: 0 0 11px 1px #ff8b38;
+}
+
+#topmar {
+    margin-top: -5%;
+}
+
+h3.name_price {
+    background: #333333;
+    color: #fff;
+    padding: 22px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+}
+
+h1.number_price {
+    background: #333333;
+    color: #fff;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    /* padding: 0; */
+}
+
+span.price {
+    font-size: 35px;
+}
+
+h4.level_price {
+    background: #333333;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ff8b38;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+}
+
+h5.price2 {
+    background: #ff8b38;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+}
+
+.contan_price p {
+    background: #fff;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.customer_class,
+.overly_are {
+    width: 100%;
+}
+
+section.customer_class {
+    padding: 0 0 3% 0;
+}
+
+.card_customer {
+    position: relative;
+    float: left;
+    width: 29%;
+    margin: 0 2%;
+}
+
+p.text_customer {
+    background: #f5f5f5;
+    padding: 15px;
+    text-align: left;
+    max-width: 282px;
+    color: #86878b;
+}
+
+.triangle,
+.triangle2,
+.triangle3 {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(245, 245, 245, 0);
+    border-top-color: #f5f5f5;
+    border-width: 15px;
+    margin-left: -15px;
+    margin-top: -15.8px;
+}
+
+.triangle {
+    left: 10%;
+}
+
+.triangle2 {
+    left: 10%;
+}
+
+.triangle3 {
+    left: 10%;
+}
+
+img.img_cust {
+    float: left;
+    width: 20%;
+}
+
+.info_post {
+    float: right;
+    width: 75%;
+    margin-left: 1%;
+}
+
+.bg_img_second {
+    background: url(../image/bg1.jpg) center center / cover no-repeat;
+    width: 100%;
+}
+
+.overly_design {
+    background-color: #0000007a;
+    width: 100%;
+}
+
+.info_design {
+    text-align: center;
+    padding: 5% 0;
+}
+
+h1.addres_info_design {
+    color: white;
+    margin-bottom: 2%;
+}
+
+.info_design hr {
+    border: 1px solid white;
+    width: 5%;
+}
+
+p.info_style {
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+a.button_style {
+    padding: 1% 2%;
+    color: white;
+    border: 1px solid white;
 }
 
 footer {
