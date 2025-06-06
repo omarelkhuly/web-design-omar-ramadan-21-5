@@ -117,16 +117,16 @@ li.nav_list_links {
     width: 150px;
     z-index: 5555555;
     background-color: white;
-    margin-top: 10%;
+    margin-top: 2%;
     padding: 5%;
     border-radius: 5%;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    opacity: 0;
-    transition: 0.5s;
+    display: none;
+    transition: 2s;
 }
 
 .dropdown:hover .dropdown_menu {
-    opacity: 1;
+    display: block;
 }
 
 .dropdown_item {
@@ -335,6 +335,105 @@ li.tabs:hover .opacty_active {
 
 img.image-position1 {
     width: 100%;
+}
+
+.image_overly {
+    position: relative;
+}
+
+.overly {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: white;
+    display: flex;
+}
+
+.overly a {
+    margin: 4% 7%;
+    display: block;
+    background-color: white;
+    padding: 2% 3%;
+    box-shadow: 0 0 3px 0px wheat;
+    transition: 1s;
+}
+
+.overly a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.p_title {
+    padding-left: 4%;
+}
+
+h5.post_link_titel,
+h4.post_link_card {
+    color: black;
+}
+
+h4.post_link_card,
+.post_titel_card,
+h5.post_link_titel {
+    margin: 4% 0;
+}
+
+a.post_author,
+a.post_date,
+a.post_author_line,
+a.post_date_line {
+    color: #86878b;
+    transition: 1s;
+}
+
+a.post_author_line,
+a.post_date_line {
+    font-size: 12px;
+}
+
+a.post_date:hover,
+a.post_author:hover,
+a.post_author_line:hover,
+a.post_date_line:hover {
+    color: blue;
+}
+
+.cards_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards_line img {
+    width: 30%;
+}
+
+.posts_titel_cards {
+    width: 67%;
+}
+
+.bottom_left {
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.part_bottom_left_start {
+    padding-right: 1%;
+}
+
+.part_bottom_left_start,
+.part_bottom_left_end {
+    width: 49%;
+}
+
+.cards_line_part_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.cards_line_part_bottom img {
+    width: 30%;
 }
 
 /* about_world style end */
