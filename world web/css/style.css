@@ -10,7 +10,15 @@ html {
     font-family: 'Ubuntu';
     src: url('../font/Ubuntu/Ubuntu-Bold.woff2') format('woff2'),
         url('../font/Ubuntu/Ubuntu-Bold.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../font/Ubuntu/Ubuntu-Bold.woff2') format('woff2');
+    src: url('../font/Ubuntu/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -19,7 +27,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    ;
 }
 
 li {
@@ -27,6 +34,8 @@ li {
 }
 
 a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -46,8 +55,56 @@ p {
 
 /* Global Style */
 .container {
-    width: 70%;
+    width: 85%;
     margin: 0% auto;
+}
+
+.ubuntu_light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu_regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu_medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu_bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu_light_italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu_regular_italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu_medium_italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu_bold_italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /* Custom Style */
@@ -217,7 +274,7 @@ p.titel_border {
 
 /* about_world style start */
 aside {
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .tabs_cards {
@@ -226,18 +283,19 @@ aside {
 
 .part_left {
     width: 65%;
-    padding: 0 1%;
+    padding: 0 3%;
 }
 
 .part_right {
     width: 35%;
+    border-left: 1px solid #f1f1f1;
 }
 
 .header_tabs {
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #ddbfbf;
+    border-bottom: 2px solid #f1f1f1;
     margin-bottom: 1%;
 }
 
@@ -368,6 +426,7 @@ img.image-position1 {
 }
 
 h5.post_link_titel,
+h5.post_side_titel,
 h4.post_link_card {
     color: black;
 }
@@ -398,16 +457,21 @@ a.post_date_line:hover {
     color: blue;
 }
 
-.cards_line {
+.cards_line,
+.cards_side {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
 }
 
-.cards_line img {
+.cards_line img,
+.cards_side img {
     width: 30%;
 }
 
-.posts_titel_cards {
+.posts_titel_cards,
+.posts_titel_side {
     width: 67%;
 }
 
@@ -436,4 +500,74 @@ a.post_date_line:hover {
     width: 30%;
 }
 
+.side_about_world,
+.side_top_stories,
+.side_stay_connected,
+.side_todays_pick {
+    border-bottom: 2px solid #f1f1f1;
+    padding: 3% 0;
+}
+
+h5.title_side {
+    font-size: 22px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.widget_content_side,
+.cards_down_side,
+.side_social_area,
+.side_card_img_post,
+.post_content_side {
+    margin-top: 5%;
+}
+
+.side_social_area {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.link_side_icons {
+    width: 36px;
+    height: 36px;
+    border: 1px solid;
+    border-color: #f1f1f1;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    transition: 1s;
+    color: #8d8d8d;
+}
+
+a.link_side_icons:hover {
+    color: #0000ff;
+}
+
+a.link_post_titel {
+    font-size: 22px;
+}
+
 /* about_world style end */
+
+/* go to top style start */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #232323;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.go-top:hover {
+    background-color: #0000ff;
+}
+
+/* go to top style end */
