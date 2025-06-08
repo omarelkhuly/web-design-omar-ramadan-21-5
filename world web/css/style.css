@@ -275,6 +275,7 @@ p.titel_border {
 /* about_world style start */
 aside {
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .tabs_cards {
@@ -550,6 +551,82 @@ a.link_post_titel {
 
 /* about_world style end */
 
+/* Flex Cards style start*/
+.flex_cards_stable {
+    margin-top: 8%;
+}
+
+.flex_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_card {
+    width: 30%;
+    position: relative;
+}
+
+img.image_flex_position {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overly_flex {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #00000082;
+    text-align: center;
+}
+
+.overly_flex a {
+    display: inline-block;
+    color: white;
+}
+
+a.post_author_flex,
+a.post_date_flex {
+    color: #86878b;
+    transition: 1s;
+}
+
+a.post_author_flex:hover,
+a.post_date_flex:hover {
+    color: #0000ff;
+}
+
+a.link_flex_postion {
+    padding: 0 10px;
+    margin: 4% 0;
+    height: 20px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #0000ff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    transition: 1s;
+}
+
+a.link_flex_postion:hover {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+a.link_flex_pos_titel {
+    margin: 4% 5%;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.flex_titel_card {
+    margin: 5% 0;
+}
+
+/* Flex Cards style end*/
+
 /* go to top style start */
 .go-top {
     position: fixed;
@@ -571,3 +648,77 @@ a.link_post_titel {
 }
 
 /* go to top style end */
+
+/* Footer style start*/
+.footer {
+    background-color: #111;
+    color: #eee;
+    padding: 40px 0;
+}
+
+.flex_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_section {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.footer_section h2,
+.footer_section h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer_section p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 30px;
+}
+
+.footer_section.links_footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.footer_section.links_footer a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    line-height: 45px;
+    transition: color 1s ease;
+}
+
+.footer_section.links_footer a:hover {
+    color: #0000ff;
+}
+
+.subscribe_box {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+.subscribe_box input {
+    flex: 1;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.subscribe_box button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer style end*/
