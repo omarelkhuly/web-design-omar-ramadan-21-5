@@ -12,6 +12,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#body{
+    width: 100%;
+    text-align: center;
+}
+
 .d_flex {
     display: flex;
     justify-content: space-between;
@@ -167,11 +172,10 @@ a.links_titel_post_card {
 .loader {
     width: 50px;
     height: 50px;
+    display: inline-block;
     position: relative;
-    /* دائرة خفيفة باستخدام حدود شفافة */
     border: 4px solid rgba(37, 176, 155, 0.3);
     border-top-color: #25b09b;
-    /* لون الجزء المتحرك */
     border-radius: 50%;
     animation: rotate-loader 1s infinite linear;
 }
