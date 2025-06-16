@@ -1,0 +1,32 @@
+{
+    "ar": {
+        "card_text": "اختبار البطاقة",
+        "link": "index-ar.html",
+        "linkTrans": "translation-ar",
+        "title1": "ما هو Bootstrap؟",
+        "text1": "Bootstrap هو إطار عمل لتصميم مواقع الويب بطريقة سريعة وسهلة.",
+        "btn1": "اقرأ المزيد",
+        "title2": "تصميم متجاوب",
+        "text2": "Bootstrap يساعدك على بناء مواقع تستجيب لجميع الأجهزة.",
+        "btn2": "تعرف أكثر",
+        "title3": "مكونات جاهزة",
+        "text3": "يوفر Bootstrap مكونات جاهزة مثل الأزرار والقوائم.",
+        "btn3": "تفاصيل أكثر",
+        "langBtn": "اختر اللغة"
+    },
+    "en": {
+        "card_text": "Card Test",
+        "link": "index.html",
+        "linkTrans": "translation",
+        "title1": "What is Bootstrap?",
+        "text1": "Bootstrap is a framework for building websites quickly and easily.",
+        "btn1": "Read More",
+        "title2": "Responsive Design",
+        "text2": "Bootstrap helps you build websites that work on all devices.",
+        "btn2": "Learn More",
+        "title3": "Prebuilt Components",
+        "text3": "Bootstrap offers ready components like buttons and menus.",
+        "btn3": "More Details",
+        "langBtn": "Choose Language"
+    }
+}

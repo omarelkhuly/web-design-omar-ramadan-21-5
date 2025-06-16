@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Cards with Language Switch</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    .card {
+      background-color: #5603df !important;
+      margin-top: 2%;
+      border-radius: 5px !important;
+      overflow: hidden;
+    }
+
+    .adress_card,
+    .post_card {
+      color: white !important;
+    }
+
+    .custom-card {
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+
+    .custom-card:hover {
+      transform: scale(1.05) rotateY(3deg);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-card img {
+      transition: transform 0.6s ease;
+      backface-visibility: hidden;
+    }
+
+    .custom-card:hover img {
+      transform: rotate(2deg) scale(1.1);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container my-4">
+    <div class="lang-dropdown">
+      <div class="dropdown">
+        <button id="langBtn" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Choose Language
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('ar')">العربية</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+          <li><a class="dropdown-item" id="langLink" href="#">...</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card custom-card h-100">
+            <img src="image/image_bootstrab1.jpg" class="card-img-top" alt="Bootstrap Image" />
+            <div class="card-body">
+              <h5 id="title1" class="card-title adress_card">Title 1</h5>
+              <p id="text1" class="card-text post_card">Text 1</p>
+              <a href="#" id="btn1" class="btn btn-primary">Button 1</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card h-100">
+            <img src="image/image_bootstrab2.jpg" class="card-img-top" alt="Responsive Design" />
+            <div class="card-body">
+              <h5 id="title2" class="card-title adress_card">Title 2</h5>
+              <p id="text2" class="card-text post_card">Text 2</p>
+              <a href="#" id="btn2" class="btn btn-success">Button 2</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card h-100">
+            <img src="image/image_bootstrab3.jpg" class="card-img-top" alt="Components" />
+            <div class="card-body">
+              <h5 id="title3" class="card-title adress_card">Title 3</h5>
+              <p id="text3" class="card-text post_card">Text 3</p>
+              <a href="#" id="btn3" class="btn btn-warning text-white">Button 3</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    async function setLanguage(lang) {
+      const res = await fetch('lang.json');
+      const data = await res.json();
+
+      document.getElementById('title1').innerText = data[lang].title1;
+      document.getElementById('text1').innerText = data[lang].text1;
+      document.getElementById('btn1').innerText = data[lang].btn1;
+
+      document.getElementById('title2').innerText = data[lang].title2;
+      document.getElementById('text2').innerText = data[lang].text2;
+      document.getElementById('btn2').innerText = data[lang].btn2;
+
+      document.getElementById('title3').innerText = data[lang].title3;
+      document.getElementById('text3').innerText = data[lang].text3;
+      document.getElementById('btn3').innerText = data[lang].btn3;
+
+      document.getElementById('langBtn').innerText = data[lang].langBtn;
+
+      const linkElement = document.getElementById('langLink');
+      linkElement.textContent = data[lang].card_text;
+      linkElement.href = data[lang].link;
+
+      document.documentElement.lang = lang;
+      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+
+    setLanguage('ar');
+  </script>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
