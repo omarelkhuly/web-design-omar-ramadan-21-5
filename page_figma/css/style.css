@@ -1,0 +1,37 @@
+img.part_top_image {
+    top: -3%;
+    left: -40px;
+    width: 15px;
+    height: 15px;
+}
+
+img.part_bottom_image {
+    top: 40%;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+}
+
+.dropdown-item:hover {
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+.button_start .btn {
+    border-color: black !important;
+    border-radius: 25px !important;
+    transition: 1s;
+}
+
+.button_start .btn:hover {
+    background-color: blueviolet !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+.hero_section {
+    background-image: url('../image/hero_section-image.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

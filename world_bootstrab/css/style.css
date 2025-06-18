@@ -14,12 +14,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #495057;
     transition: 1s;
 }
 
 a:hover {
-    color: #0000ff;
+    color: #0000ff !important;
 }
 
 h1,
@@ -40,6 +39,7 @@ h4,
 h5,
 h6 {
     color: black;
+    font-size: 17px;
 }
 
 p {
@@ -47,14 +47,68 @@ p {
     line-height: 1.4;
 }
 
-.overly a {
-    background-color: white;
-    color: #0000ff;
-    padding: 11% 25%;
-    display: inline-block;
+.overly a:hover {
+    background-color: #0000ff !important;
+    color: white !important;
 }
 
-.overly a:hover {
-    background-color: #0000ff;
-    color: white;
+.nav-link:hover,
+.nav-link.active {
+    color: black;
+    font-weight: 600;
+}
+
+.active_world::after,
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+}
+
+.active_world:hover::after,
+.active.active::after {
+    width: 100%;
+}
+
+.active_world:hover::after {
+    left: 1.9%;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    color: white !important;
+    background-color: blue;
+    border-color: blue;
+}
+
+.arrow-btn:hover i {
+    transform: scale(1.2);
+}
+
+.arrow-btn i {
+    transition: transform 0.3s ease;
+}
+
+.part_right {
+    border-color: #8d8d8d;
+}
+
+.link_side_icons {
+    border-color: #8d9bbb;
+    width: 50px;
+    height: 50px;
+}
+
+.link_side_icons .fab{
+    display: inline-block;
 }
