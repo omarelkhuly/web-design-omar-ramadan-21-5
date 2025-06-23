@@ -1,15 +1,6 @@
-img.part_top_image {
-    top: -3%;
-    left: -40px;
-    width: 15px;
-    height: 15px;
-}
-
-img.part_bottom_image {
-    top: 40%;
-    left: -25px;
-    width: 15px;
-    height: 15px;
+img.part_image {
+    width: 25px;
+    height: 25px;
 }
 
 .dropdown-item:hover {
@@ -32,6 +23,153 @@ img.part_bottom_image {
 .hero_section {
     background-image: url('../image/hero_section-image.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+}
+
+.card_titel_bgimage {
+    padding: 15%;
+}
+
+.button_start .btn {
+    color: rgb(0, 0, 0);
+}
+
+.image_icons {
+    width: 30px;
+}
+
+.product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tab-content .row {
+    margin-top: 20px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show {
+    color: #fff !important;
+    background-color: #4d5154 !important;
+    border-color: #373b3e !important;
+}
+
+.search-input {
+    max-width: 250px;
+}
+
+.service-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    color: white;
+    font-weight: bold;
+}
+
+.service-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.height_spicial .service-box {
+    height: 99%;
+}
+
+img.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+.rounded-img {
+    border-radius: 10px;
+}
+
+.img-overlay-small {
+    bottom: -20px;
+    left: 20px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail {
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-thumbnail .play-btn {
+    top: 35%;
+    left: 44%;
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    border-radius: 50%;
+}
+
+.play-btn:hover {
+    color: #ffc107;
+}
+
+.colors_spiacial {
+    color: #667085;
+}
+
+.get_in_touch {
+    background-color: #0e1528;
+    color: white;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #000;
+}
+
+/* footer */
+.footer {
+    background-color: #0b1323;
+    padding: 3rem 0;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.form-check-label a {
+    text-decoration: underline;
+}
+
+.social-icons i {
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.social-icons i:hover {
+    color: white;
 }

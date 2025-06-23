@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paws n’ Play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0e1528;
+            color: white;
+        }
+        .contact-form {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            color: #000;
+        }
+
+        .footer {
+            background-color: #0b1323;
+            padding: 3rem 0;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .form-check-label a {
+            text-decoration: underline;
+        }
+
+        .social-icons i {
+            margin-right: 10px;
+            color: #ccc;
+        }
+
+        .social-icons i:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-6">
+                <h3 class="mb-4"><i class="fas fa-envelope-open-text me-2"></i>Get in touch</h3>
+                <div class="contact-form shadow">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@company.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Your message here..."></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="policy">
+                            <label class="form-check-label" for="policy">
+                                You agree to our friendly <a href="#">privacy policy</a>.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Send message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-6">
+                <div class="mb-4">
+                    <i class="fas fa-envelope me-2"></i><strong>Email</strong>
+                    <p class="mb-1 text-white-50">Our friendly team is here to help.</p>
+                    <p><a href="mailto:hello@pawsnplay.com">hello@pawsnplay.com</a></p>
+                </div>
+                <div class="mb-4">
+                    <i class="fas fa-comments me-2"></i><strong>Live chat</strong>
+                    <p class="mb-1 text-white-50">Our friendly team is here to help.</p>
+                    <p><a href="#">Start new chat</a></p>
+                </div>
+                <div class="mb-4">
+                    <i class="fas fa-map-marker-alt me-2"></i><strong>Office</strong>
+                    <p class="mb-1 text-white-50">Come say hello at our office HQ.</p>
+                    <p>123, Yaya Abatan st, Ogba Lagos.</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone me-2"></i><strong>Phone</strong>
+                    <p class="mb-1 text-white-50">Mon-Fri from 8am to 5pm.</p>
+                    <p>+234 901234 384</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-paw me-2"></i>Paws n’ Play</h5>
+                    <p>Where wagging tails and purring hearts reign supreme!</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h6>Join our newsletter</h6>
+                    <p class="small text-white-50">Be the first to receive latest updates on promo, sales and offers</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email">
+                        <button class="btn btn-light" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Shop</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Pet Adoption</a></li>
+                                <li><a href="#">Nutrition</a></li>
+                                <li><a href="#">Pet Care</a></li>
+                                <li><a href="#">Pet Food</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h6>Company</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-between align-items-center border-top pt-4 mt-4">
+                    <p class="mb-0 small">© 2024 Paws n’ Play. All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-angellist"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

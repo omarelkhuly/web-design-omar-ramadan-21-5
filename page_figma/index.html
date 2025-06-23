@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Paws Play</title>
@@ -11,21 +12,20 @@
 
 <body>
     <section class="pb-4 hero_section">
-        <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
             <div class="container">
                 <div class="d-flex">
-                    <div class="images_small_dog_foot position-relative">
-                        <img src="image/logo_part_top.png" alt="" class="part_top_image position-absolute">
-                        <img src="image/logo_part_top.png" alt="" class="part_bottom_image position-absolute">
-                    </div>
-                    <a class="navbar-brand d-inline-block" href="index.html">Paws n’ Play</a>
+                    <a class="navbar-brand d-flex" href="index.html">
+                        <img src="image/logo_icons.png" alt="" class="part_image">
+                        <span class="text-light fw-bolder">Paws n’ Play</span>
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,22 +67,474 @@
                     <h3 class="text-light fw-normal fs-3">
                         Pawsitively Perfect: Where Every Pet's Dream Comes True!
                     </h3>
-                    <p class="text-light fw-normal fs-3">
+                    <p class="text-light fw-normal fs-4">
                         Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of
                         tail-wagging joy and furry companionship with our wide range of products and services. From
                         pampering essentials to playful toys, we're here to make every moment with your pet pawsitively
                         perfect!"
                     </p>
                     <div class="button_start d-flex">
-                        <button class="btn bg-white text-black border py-2 px-3 d-flex" type="submit">
-                            <span class="text-light fw-bolder"> Get Started</span>
-                           <img src="image/buttons_icons.png" alt="">
+                        <button class="btn bg-white text-black border py-2 px-4 d-flex " type="submit">
+                            <span class="fw-bolder me-2"> Get Started</span>
+                            <img src="image/buttons_icons.png" alt="">
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="shop" class="container_shop pt-3">
+        <div class="container">
+            <h1 class="border-bottom border-primary-subtle mb-3">
+                <img class="image_icons" src="image/buttons_icons.png" alt="">
+                <span class="text-dark fw-bolder fs-3">Shop</span>
+            </h1>
+            <div class="border border-primary-subtle rounded-4 p-5">
+                <div class="top-bar mb-3 d-flex justify-content-between">
+                    <h4>Featured Products</h4>
+                    <input type="search" class="form-control search-input" placeholder="🔍 Search">
+                </div>
+
+                <ul class="nav nav-pills my-3 gap-2 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-dark rounded-pill px-4 active" id="pills-random-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-random" type="button"
+                            role="tab">Random</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-light rounded-pill px-4" id="pills-cat-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-cat" type="button" role="tab">Cat</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-light rounded-pill px-4" id="pills-dogs-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-dogs" type="button" role="tab">Dogs</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btn-light rounded-pill px-4" id="pills-fish-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-fish" type="button" role="tab">Fish</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="pills-random" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_one.png"
+                                    class="product-img rounded-4"></div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_tow.png"
+                                    class="product-img rounded-4"></div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_three.png"
+                                    class="product-img rounded-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-cat" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_four.png"
+                                    class="product-img rounded-4"></div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_five.png"
+                                    class="product-img rounded-4"></div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_tow.png"
+                                    class="product-img rounded-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-dogs" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_tow.png"
+                                    class="product-img rounded-4"></div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_three.png"
+                                    class="product-img rounded-4">
+                            </div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_five.png"
+                                    class="product-img rounded-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-fish" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_tow_fish.png"
+                                    class="product-img rounded-4">
+                            </div>
+                            <div class="col-md-4 col-sm-12 mb-2"><img src="image/product_three_fish.png"
+                                    class="product-img rounded-4">
+                            </div>
+                            <div class="col-md-4 col-sm-12"><img src="image/product_five_fish.png"
+                                    class="product-img rounded-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-more  pt-4 text-end" role="tablist">
+                        <div role="presentation">
+                            <a href="#" class="text-decoration-none fw-bolder text-dark" data-bs-toggle="pill"
+                                type="button" role="tab">
+                                View More >>>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="container_services pt-3">
+        <div class="container">
+            <h1 class="border-bottom border-primary-subtle mb-3">
+                <img class="image_icons" src="image/buttons_icons.png" alt="">
+                <span class="text-dark fw-bolder fs-3">Services</span>
+            </h1>
+            <div class="border border-primary-subtle rounded-4 p-5">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="d-flex col-lg-6 col-md-12 col-sm-12 mb-2">
+                            <div class="col-lg-12 col-md-6 col-sm-6 pe-2 mb-sm-2">
+                                <div class="service-box">
+                                    <img src="image/services_one.png" alt="Grooming">
+                                    <div class="service-text">Grooming</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-6 mb-sm-2">
+                                <div class="service-box">
+                                    <img src="image/services_tow.png" alt="Boarding">
+                                    <div class="service-text">Boarding</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex col-lg-6 col-md-12 col-sm-12 mb-2">
+                            <div class="col-lg-12 col-md-6 col-sm-6 pe-2 mb-sm-2 mb-lg-0">
+                                <div class="service-box">
+                                    <img src="image/services_three.png" alt="Veterinary">
+                                    <div class="service-text">Veterinary</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-6">
+                                <div class="service-box">
+                                    <img src="image/services_four.png" alt="Training">
+                                    <div class="service-text">Training</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 height_spicial mt-sm-2 mt-lg-0">
+                        <div class="service-box">
+                            <img src="image/services_five.png" alt="Adoption">
+                            <div class="service-text">Adoption</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container_about pt-3">
+        <div class="container">
+            <h1 class="border-bottom border-primary-subtle mb-3">
+                <img class="image_icons" src="image/buttons_icons.png" alt="">
+                <span class="text-dark fw-bolder fs-3">About Us</span>
+            </h1>
+            <div class="border border-primary-subtle rounded-4 p-5">
+                <div class="row align-items-start g-4">
+                    <div class="col-lg-7 col-sm-12">
+                        <p>
+                            At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by
+                            the
+                            unwavering companionship and joy they bring to our lives, we embarked on a mission to create
+                            a haven
+                            where pets and their owners alike could experience unparalleled happiness and care.
+                        </p>
+                        <p>
+                            Driven by our passion for animal welfare, we hand-select each product and service with
+                            meticulous
+                            attention to quality and sustainability. From nutritious food and enriching toys to expert
+                            grooming
+                            and healthcare, every offering is carefully curated to meet the unique needs of our beloved
+                            furry
+                            friends.
+                        </p>
+                        <p>
+                            But our commitment doesn’t end there. We’re dedicated to fostering a community that
+                            celebrates the
+                            bond between pets and their human companions. Through educational resources, compassionate
+                            support,
+                            and memorable experiences, we strive to empower pet owners to provide the best possible care
+                            for
+                            their furry family members.
+                        </p>
+                        <p>
+                            At Paws n’ Play, customer satisfaction isn’t just a goal – it’s our guiding principle. We go
+                            above
+                            and beyond to ensure every interaction leaves tails wagging and hearts smiling. From
+                            personalized
+                            recommendations to convenient service, we’re here to make your journey with your pet as
+                            joyful and
+                            fulfilling as possible.
+                        </p>
+                        <p>
+                            Join us in our mission to create a world where every pet is cherished, every need is met,
+                            and every
+                            tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no
+                            bounds.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5 d-lg-block d-sm-none position-relative">
+                        <img src="image/about_big.png" class="img-fluid rounded-img mb-4 ps-5" alt="Main Cat">
+                        <img src="image/about_small.png" class="img-overlay-small position-absolute bg-white p-2"
+                            alt="Small Cat">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="container_team pt-3">
+        <div class="container">
+            <h1 class="border-bottom border-primary-subtle mb-3">
+                <img class="image_icons" src="image/buttons_icons.png" alt="">
+                <span class="text-dark fw-bolder fs-3">Our Team</span>
+            </h1>
+            <div class="border border-primary-subtle rounded-4 p-5">
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <img src="image/our_tiem_one.png" class="card-img-top" alt="Dr. Olivia Rhye">
+                            <div class="card-body">
+                                <h5 class="card-title">Dr. Olivia Rhye</h5>
+                                <p class="card-text text-muted">Senior Veterinarian</p>
+                                <div class="social-icons">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-dribbble"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <img src="image/our_tiem_tow.png" class="card-img-top" alt="Phoenix Baker">
+                            <div class="card-body">
+                                <h5 class="card-title">Phoenix Baker</h5>
+                                <p class="card-text text-muted">Asst. Veterinarian</p>
+                                <div class="social-icons">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-dribbble"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <img src="image/our_tiem_three.png" class="card-img-top" alt="Lana Steiner">
+                            <div class="card-body">
+                                <h5 class="card-title">Lana Steiner</h5>
+                                <p class="card-text text-muted">Resident Veterinarian</p>
+                                <div class="social-icons">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-dribbble"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card team-card">
+                            <img src="image/our_tiem_four.png" class="card-img-top" alt="Demi Wilkinson">
+                            <div class="card-body">
+                                <h5 class="card-title">Demi Wilkinson</h5>
+                                <p class="card-text text-muted">Intern Veterinarian</p>
+                                <div class="social-icons">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-dribbble"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="container_blog pt-3">
+        <div class="container">
+            <h1 class="border-bottom border-primary-subtle mb-3">
+                <img class="image_icons" src="image/buttons_icons.png" alt="">
+                <span class="text-dark fw-bolder fs-3">Blog</span>
+            </h1>
+            <div class="border border-primary-subtle rounded-4 p-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12 mb-4 mb-md-0">
+                        <h4><strong>Milestone: 20,000 Pets Treated</strong></h4>
+                        <p class="fw-semibold colors_spiacial">
+                            Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus
+                            velit,
+                            sed auctor.
+                            Porttitor fames arcu quis fusce augue enim. Quis ut habitant diam at.
+                            <a href="#" class="colors_spiacial">Suscipit tristique risus</a> et donec. In turpis vel et
+                            quam imperdiet.
+                        </p>
+                        <h6><strong>Renewed target</strong></h6>
+                        <p class="fw-semibold colors_spiacial">
+                            Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper
+                            porttitor.
+                            Pulvinar ullamcorper sit dictumst ut eget a, elementum eu.
+                            <a href="#" class="colors_spiacial">Maecenas est morbi mattis id in ac.</a>
+                        </p>
+                        <a href="#" class="btn btn-dark">Read more</a>
+                    </div>
+
+                    <div class="col-md-6 d-none d-lg-flex">
+                        <div class="video-thumbnail position-relative" data-bs-toggle="modal"
+                            data-bs-target="#videoModal">
+                            <img src="image/blogs.png" alt="Dog and toys">
+                            <div class="play-btn position-absolute bg-dark text-white 
+                    d-flex justify-content-center align-items-center">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title text-white" id="videoModalLabel">Watch Our Journey</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="get_in_touch">
+        <div class="container mt-5">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-6">
+                    <h3 class="mb-4"><i class="fas fa-envelope-open-text me-2"></i>Get in touch</h3>
+                    <div class="contact-form shadow">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@company.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Your message here..."></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="policy">
+                                <label class="form-check-label" for="policy">
+                                    You agree to our friendly <a href="#">privacy policy</a>.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Send message</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <i class="fas fa-envelope me-2"></i><strong>Email</strong>
+                        <p class="mb-1 text-white-50">Our friendly team is here to help.</p>
+                        <p><a href="mailto:hello@pawsnplay.com">hello@pawsnplay.com</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <i class="fas fa-comments me-2"></i><strong>Live chat</strong>
+                        <p class="mb-1 text-white-50">Our friendly team is here to help.</p>
+                        <p><a href="#">Start new chat</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <i class="fas fa-map-marker-alt me-2"></i><strong>Office</strong>
+                        <p class="mb-1 text-white-50">Come say hello at our office HQ.</p>
+                        <p>123, Yaya Abatan st, Ogba Lagos.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone me-2"></i><strong>Phone</strong>
+                        <p class="mb-1 text-white-50">Mon-Fri from 8am to 5pm.</p>
+                        <p>+234 901234 384</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-paw me-2"></i>Paws n’ Play</h5>
+                    <p>Where wagging tails and purring hearts reign supreme!</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h6>Join our newsletter</h6>
+                    <p class="small text-white-50">Be the first to receive latest updates on promo, sales and offers</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email">
+                        <button class="btn btn-light" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Shop</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Pet Adoption</a></li>
+                                <li><a href="#">Nutrition</a></li>
+                                <li><a href="#">Pet Care</a></li>
+                                <li><a href="#">Pet Food</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h6>Company</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-between align-items-center border-top pt-4 mt-4">
+                    <p class="mb-0 small">© 2024 Paws n’ Play. All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-angellist"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
