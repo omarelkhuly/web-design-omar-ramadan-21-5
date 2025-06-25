@@ -1,0 +1,107 @@
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+        background-color: yellow;
+        color: black;
+    }
+
+    .btn {
+        transition: 1s !important;
+    }
+
+    .btn:hover {
+        color: #1818e0;
+        background-color: #c1ff07 !important;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    input.form-control {
+        width: 40%;
+        padding: 3% 1%;
+        border-radius: 0;
+        font-size: 20px;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 4px 0rem rgb(255 193 7);
+        border-color: #ffc107;
+    }
+
+    .overly {
+        padding: 20% 0%;
+        background: #b1d3e4;
+        margin-left: 23%;
+    }
+
+    .width_spicial {
+        width: 65%;
+        right: 54%;
+        bottom: 15%;
+    }
+
+    .style_spicial {
+        width: 20%;
+        font-size: 20px;
+    }
+
+    .spicial_abs {
+        top: 80.7%;
+        right: 0;
+    }
+
+    .search-box {
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    .highlight-box {
+        background: yellow;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    .stats,
+    .services,
+    .agents,
+    .ads {
+        padding: 60px 20px;
+    }
+
+    .stats-box,
+    .apartment-card,
+    .step-box,
+    .agent-card,
+    .ad-box {
+        background: #f8f9fa;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .step-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffc107;
+    }
+
+    .footer {
+        background: #152935;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }

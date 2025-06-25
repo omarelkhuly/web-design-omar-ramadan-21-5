@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.font_family {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line_col {
+    border: 1px solid white;
+}
+
+.email_cont {
+    margin-right: 5%;
+}
+
+.call_cont {
+    margin-left: 5%;
+}
+
+.hover_drop{
+    position: relative;
+}
+
+.dropdown_hover {
+    position: absolute;
+    transform: translateX(-20px);
+    min-width: 190px;
+    width: auto;
+    z-index: 3;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 2px solid #0c65ed;
+    text-align: left;
+}
+
+.hover_drop:hover>.dropdown_hover{
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}

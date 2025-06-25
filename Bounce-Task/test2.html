@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.rtl.min.css"> -->
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Operators Demo</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript Operators Demo</h2>
+    <button onclick="runDemo()">عرض النتائج</button>
+    <div class="output" id="output"></div>
+
+    <script>
+        function runDemo() {
+            let output = "";
+
+            let num = 10;
+            let str = "Hello";
+            let bool = true;
+            let undef;
+            let nul = null;
+
+            output += " القيم وأنواعها:\n";
+            output += `num (${typeof num}), str (${typeof str}), bool (${typeof bool}),\n`;
+
+            output += " Mathematical Operators:\n";
+            output += `Addition: 5 + 3 = ${5 + 3}\n`;
+            output += `Subtraction: 5 - 3 = ${5 - 3}\n`;
+            output += `Multiplication: 5 * 3 = ${5 * 3}\n`;
+            output += `Division: 6 / 2 = ${6 / 2}\n`;
+            output += `Modulus: 7 % 2 = ${7 % 2}\n\n`;
+
+            let x = 5;
+            x += 3;
+            output += " Assignment Operators:\n";
+            output += `x = 5; x += 3 → x = ${x}\n`;
+            x *= 2;
+            output += `x *= 2 → x = ${x}\n\n`;
+
+            output += " Comparison Operators:\n";
+            output += `5 == '5': ${5 == '5'}\n`;
+            output += `5 === '5': ${5 === '5'}\n`;
+            output += `5 != '5': ${5 != '5'}\n`;
+            output += `5 !== '5': ${5 !== '5'}\n`;
+            output += `5 > 3: ${5 > 3}\n`;
+            output += `5 < 3: ${5 < 3}\n\n`;
+
+            output += " Logical Operators:\n";
+            output += `(true && false): ${true && false}\n`;
+            output += `(true || false): ${true || false}\n`;
+            output += `!true: ${!true}\n\n`;
+
+            let age = 20;
+            let canDrive = age >= 18 ? "Yes" : "No";
+            output += " Ternary Operator:\n";
+            output += `Age = 20, Can drive? ${canDrive}\n\n`;
+
+            let y = 5;
+            output += " Unary Operators:\n";
+            output += `Initial y = ${y}\n`;
+            output += `++y = ${++y} (prefix)\n`;
+            output += `y++ = ${y++} (postfix, now y = ${y})\n`;
+            output += `typeof 'hello': ${typeof "hello"}\n\n`;
+
+            output += " Truthy & Falsy:\n";
+            output += `Boolean(0): ${Boolean(0)}\n`;
+            output += `Boolean(null): ${Boolean(null)}\n`;
+            output += `Boolean(''): ${Boolean("")}\n`;
+            output += `Boolean(undefined): ${Boolean(undefined)}\n`;
+            output += `Boolean('Omar'): ${Boolean("Omar")}\n`;
+            output += `Boolean(1): ${Boolean(1)}\n`;
+    
+            console.log(output);
+        }
+    </script>
+    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
