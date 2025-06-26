@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.rtl.min.css"> -->
+    <title>Document</title>
+    <style>
+        .carousel-item {
+            cursor: grab;
+        }
+
+        .custom-btn {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-btn:hover {
+            background-color: #0c65ed !important;
+            color: #fff !important;
+        }
+
+        .overly {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        @media (max-width: 768px) {
+            .overly {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <section class="py-5 bg-light" dir="rtl"> <!-- غيّر dir للـ ltr إذا أردت -->
+        <div class="container">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="position-relative">
+                            <img src="image/slider1.jpg" class="img-fluid w-100 rounded shadow" alt="صورة 1">
+                            <div
+                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
+                                <h2 class="fw-bold">عنوان الشريحة الأولى</h2>
+                                <p class="mb-4">هذا وصف بسيط للشريحة الأولى.</p>
+                                <a href="#" class="btn btn-primary me-2 custom-btn">زر 1</a>
+                                <a href="#" class="btn btn-outline-primary custom-btn">زر 2</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="position-relative">
+                            <img src="image/slider2.jpg" class="img-fluid w-100 rounded shadow" alt="صورة 2">
+                            <div
+                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
+                                <h2 class="fw-bold">عنوان الشريحة الثانية</h2>
+                                <p class="mb-4">هذا وصف بسيط للشريحة الثانية.</p>
+                                <a href="#" class="btn btn-primary me-2 custom-btn">زر 1</a>
+                                <a href="#" class="btn btn-outline-primary custom-btn">زر 2</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">السابق</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#customCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">التالي</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const carousel = document.querySelector('#customCarousel .carousel-inner');
+        let startX = 0;
+        let isDragging = false;
+
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+        });
+
+        carousel.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diff = e.clientX - startX;
+            if (diff > 50) {
+                bootstrap.Carousel.getInstance(document.getElementById('customCarousel')).prev();
+            } else if (diff < -50) {
+                bootstrap.Carousel.getInstance(document.getElementById('customCarousel')).next();
+            }
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

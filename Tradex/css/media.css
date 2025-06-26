@@ -2,4 +2,20 @@
     header{
         display: none;
     }
+    .dropdown_hover{
+        position: initial;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    .hover_drop:hover>.dropdown_hover{
+        display: block;
+    }
+    .hover_menu{
+        width: 600px;
+        right: 0;
+    }
+    .hover_drop:hover>.hover_menu{
+        display: flex;
+    }
 }
