@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
     background-color: #a4aebc;
     border-color: #0c65ed;
@@ -73,4 +73,82 @@ a {
     width: 25%;
     padding: 15px 0;
     border-right: 1px solid #ebebeb;
+}
+
+.carousel-item {
+    cursor: grab;
+}
+
+.custom-btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn .hover_after {
+    background: #fff;
+    content: "";
+    height: 92px;
+    left: -75px;
+    opacity: 0;
+    position: absolute;
+    top: -69%;
+    transform: rotate(74deg);
+    transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+
+.custom-btn:hover .hover_after {
+    left: 120%;
+    opacity: 0.1;
+}
+
+.custom-btn:hover {
+    background-color: #0c65ed !important;
+    color: #fff !important;
+}
+
+.overly {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.padding_spicial {
+    padding: 20% 0;
+}
+
+.details_box {
+    top: 3%;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    max-width: 445px;
+}
+
+.post_titel {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.details_box .row {
+    padding: 5px 0;
+}
+
+.mock-3 {
+    text-align: right;
+}
+
+.mock-3 img {
+    max-width: 100%;
+}
+
+.bg_img {
+    background: url(../image/service-bg.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+.overly {
+    width: 100%;
+    height: 100%;
+    background-color: #000000a5;
 }
