@@ -1,5 +1,6 @@
     body {
-        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif !important;
+        background-color: wheat !important;
     }
 
     .navbar-toggler:focus {
@@ -26,21 +27,33 @@
         font-weight: bold;
     }
 
+    .forms_controls{
+        width: 60%;
+    }
+
+    .forms_controls .fa-search {
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #999;
+    }
+
     input.form-control {
-        width: 40%;
+        width: 100%;
         padding: 3% 1%;
+        margin-left: 3%;
         border-radius: 0;
         font-size: 20px;
     }
 
     .form-control:focus {
-        box-shadow: 0 0 4px 0rem rgb(255 193 7);
-        border-color: #ffc107;
+        box-shadow: 0 0 4px 0rem rgb(255 193 7) !important;
+        border-color: #ffc107 !important;
     }
 
     .overly {
         padding: 20% 0%;
-        background: #b1d3e4;
+        background: #96bece;
         margin-left: 23%;
     }
 
@@ -52,12 +65,14 @@
 
     .style_spicial {
         width: 20%;
-        font-size: 20px;
+        padding: 2% 0 !important;
+        font-size: 20px !important;
     }
 
     .spicial_abs {
-        top: 80.7%;
-        right: 0;
+        width: 40%;
+        top: 88%;
+        right: 1%;
     }
 
     .search-box {
@@ -68,7 +83,6 @@
     .highlight-box {
         background: yellow;
         padding: 10px 20px;
-        display: inline-block;
     }
 
     .stats,
