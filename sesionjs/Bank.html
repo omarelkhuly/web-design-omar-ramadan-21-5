@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var users = [];
+        // function numberOfUsers() {
+        //     var numUser = prompt("How many users do you want to add?");
+
+        //     for (var i = 0; i < numUser; i++) {
+        //         var name = prompt("Enter Username");
+        //         var id = prompt("Enter User ID");
+        //         var balance = prompt("Enter User Balance");
+
+        //         users.push({ name, id, balance });
+        //     }
+
+        //     console.log("User List:");
+        //     console.table(users);
+        // }
+
+        // numberOfUsers();
+
+        var users = [];
+
+        function addUser() {
+            var name = prompt("Enter Username:");
+            var id = prompt("Enter User ID:");
+            var balance = prompt("Enter User Balance:");
+
+            users.push({ name, id, balance });
+        }
+        function numberOfUsers() {
+
+
+            var numUser = parseInt(prompt("How many users do you want to add?"));
+
+            for (let i = 0; i < numUser; i++) {
+                addUser();
+            }
+
+            console.log("Initial User List:");
+            console.table(users);
+        }
+
+        function editUserBalanceById(users) {
+            var editById = prompt("Enter the ID of the user to edit balance:");
+
+            var user = users.find(item => item.id == editById);
+
+            if (user) {
+                user.balance = prompt(`Enter new balance for ${user.name}:`);
+                console.log(`Balance updated for ${user.name}.`);
+            } else {
+                console.log("User not found.");
+            }
+        }
+
+        function deleteUserById(users) {
+            var deleteById = prompt("Enter the ID of the user to delete:");
+
+            var index = users.findIndex(item => item.id == deleteById);
+
+            if (index !== -1) {
+                var deletedUser = users.splice(index, 1);
+                console.log(`User ${deletedUser.name} deleted.`);
+            } else {
+                console.log("User not found.");
+            }
+        }
+
+
+        numberOfUsers();
+
+        editUserBalanceById(users);
+
+        deleteUserById(users);
+        console.log("Final User List:");
+        console.table(users);
+
+
+    </script>
+</body>
+
+</html>
