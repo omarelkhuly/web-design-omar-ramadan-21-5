@@ -9,7 +9,37 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
     <style>
+        .card-img-top,
+        .card:hover {
+            transition: all 0.5s;
+        }
 
+        .card:hover .card-img-top {
+            transform: scale(1.1) rotate(3deg);
+        }
+
+        .card:hover .hover_bg_icon {
+            background-color: blue !important;
+        }
+
+        hr {
+            width: 25%;
+            border-color: blue !important;
+            border-width: 3px;
+            transition: 0.4s;
+        }
+
+        .card:hover hr {
+            width: 70%;
+        }
+
+        .btn_hover i{
+            transition: 1s;
+        }
+
+        .btn_hover:hover i {
+            padding-left: 15px;
+        }
     </style>
 </head>
 

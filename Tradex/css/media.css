@@ -1,3 +1,10 @@
+@media (max-width: 1199px) {
+    .partner_img {
+        display: none !important;
+    }
+}
+
+
 @media (max-width: 991px) {
     header {
         display: none;
@@ -21,6 +28,14 @@
 
     .hover_drop:hover>.hover_menu {
         display: flex;
+    }
+
+    #testimonial .carousel-control-prev {
+        left: 30%;
+    }
+
+    #testimonial .carousel-control-next {
+        right: 30%;
     }
 }
 

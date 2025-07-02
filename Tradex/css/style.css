@@ -226,24 +226,23 @@ section#subscribe .btn {
 .project-overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 2%;
+    width: 95%;
     background-color: #0d6efd;
     color: white;
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: scaleX(0);
+    transform: scale(0);
     opacity: 0;
-    transform-origin: left;
     transition: transform 0.3s ease;
     z-index: 1;
 }
 
 .project-card:hover .project-overlay {
     opacity: 1;
-    transform: scaleX(1);
+    transform: scale(1);
 }
 
 .project-card img {
@@ -331,6 +330,103 @@ section#subscribe .btn {
 #testimonial .carousel-control-next,
 .carousel-control-prev {
     top: 100%;
+}
+
+#testimonial .carousel-control-prev-icon,
+#testimonial .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    padding: 10% !important;
+}
+
+.carousel-control-prev-icon {
+    background: url(../image/left_arrow.png);
+}
+
+.carousel-control-next-icon {
+    background: url(../image/right_arrow.png);
+}
+
+#latest_blog .card-img-top,
+.card:hover {
+    transition: all 0.5s;
+}
+
+#latest_blog .card:hover .card-img-top {
+    transform: scale(1.1) rotate(3deg);
+}
+
+#latest_blog .card:hover .hover_bg_icon {
+    background-color: blue !important;
+}
+
+#latest_blog hr {
+    width: 25%;
+    border-color: blue !important;
+    border-width: 3px;
+    transition: 0.4s;
+}
+
+#latest_blog .card:hover hr {
+    width: 70%;
+}
+
+#latest_blog .btn_hover i {
+    transition: 1s;
+}
+
+#latest_blog .btn_hover:hover i {
+    padding-left: 15px;
+}
+
+.shadow_card {
+    box-shadow: 0 0 10px 0 #b19b83;
+}
+
+.partner_img {
+    position: absolute;
+    left: 7%;
+}
+
+.partner_img img {
+    margin-bottom: 26%;
+    filter: drop-shadow(15px 0 7px rgba(140, 140, 140, 0.4));
+}
+
+.partner_grid {
+    border: 1px solid #959595;
+    border-radius: 5px;
+    position: relative;
+    min-height: 120px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner_grid img {
+    width: 65%;
+    vertical-align: middle;
+}
+
+#grate_work{
+    position: relative;
+}
+
+#grate_work .container{
+    padding: 4.2% 0;
+}
+
+#grate_work .div_icon_postion {
+    position: absolute;
+    left: 12%;
+    font-size: 45px;
+    top: 50%;
+    transform: translateY(-45%);
+    opacity: 0.3;
 }
 
 footer .height_spicial {
