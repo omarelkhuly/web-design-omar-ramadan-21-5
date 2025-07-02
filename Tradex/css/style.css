@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+.mx_w_num {
+    max-width: 855px;
+    margin: 20px auto 60px;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
     background-color: #a4aebc;
@@ -113,8 +118,6 @@ a {
     height: 100%;
 }
 
-
-
 .padding_spicial {
     padding: 20% 0;
 }
@@ -191,6 +194,64 @@ a {
     color: black;
 }
 
+.bg_image {
+    background: url(../image/slider4.jpg) center center / cover no-repeat;
+}
+
+.height_section_image_bg {
+    padding: 28% 0;
+}
+
+.padding_row {
+    padding: 10% 0;
+}
+
+section#subscribe input.form-control {
+    width: 70% !important;
+    padding: 12px 20px;
+}
+
+section#subscribe .btn {
+    border-radius: 25px;
+    width: 17%;
+    font-size: 20px;
+    padding: 13px 0px 11px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .team_theme .card {
     overflow: hidden;
     margin-bottom: 8%;
@@ -209,6 +270,10 @@ a {
     transform: translateY(125px);
 }
 
+.team_theme .card:hover .team_det {
+    transform: translateY(0px);
+}
+
 .team_theme .team_det p {
     margin-bottom: 50px;
     opacity: 0;
@@ -216,6 +281,13 @@ a {
 
 .team_theme .card:hover p {
     opacity: 1;
+}
+
+.crds_flex hr {
+    border-color: #0c65ed;
+    padding-bottom: 2%;
+    margin: 0 30%;
+    border-width: 2px;
 }
 
 .clear_bordre {
@@ -227,15 +299,38 @@ a {
     background-color: #1a1a1a;
 }
 
-.crds_flex hr {
-    border-color: #0c65ed;
-    padding-bottom: 2%;
-    margin: 0 30%;
-    border-width: 2px;
+.team_theme .card:hover .clear_bordre {
+    display: none;
 }
 
 .style_spicialty {
     box-shadow: 0 0 25px 0 #00000040;
+}
+
+.px_spicial {
+    padding: 0 15%;
+    opacity: 0;
+    transform: translateY(62px);
+    border-radius: 5px 5px 0 0;
+    transition: all .5s ease;
+}
+
+.team_theme .card:hover .px_spicial {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#testimonial .carousel-control-prev {
+    left: 40%;
+}
+
+#testimonial .carousel-control-next {
+    right: 40%;
+}
+
+#testimonial .carousel-control-next,
+.carousel-control-prev {
+    top: 100%;
 }
 
 footer .height_spicial {
