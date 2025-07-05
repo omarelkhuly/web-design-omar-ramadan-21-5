@@ -1,1732 +1,2123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="../sesionjs/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../sesionjs/css/owl.theme.default.min.css">
     <title>tradex-premium</title>
-</head>
+  </head>
 
-<body class="m-0 p-0 font_family">
+  <body class="m-0 p-0 font_family">
     <header class="bg-primary text-center p-1">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 d-flex">
-                    <ul class="nav nav_width">
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-5" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-5" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-5" href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-5" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-5" href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="line_col"></div>
-                    <div class="location d-flex align-items-center justify-content-center">
-                        <i class="fas fa-map-marker-alt ms-2 text-white"></i>
-                        <p class="text-white m-0 ms-3">
-                            267 Park Avenue New York, NY 90210
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="d-flex ">
-                        <div class="email_cont d-flex">
-                            <i class="fas fa-envelope text-white lh-base"></i>
-                            <p class="text-white m-0 ms-3">
-                                Quick Email
-                            </p>
-                        </div>
-                        <div class="line_col"></div>
-                        <div class="call_cont d-flex">
-                            <i class="fas fa-phone-alt text-white lh-base"></i>
-                            <p class="text-white m-0 ms-3">
-                                +1 (409) 987–5874
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 d-flex">
+            <ul class="nav nav_width">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="line_col"></div>
+            <div
+              class="location d-flex align-items-center justify-content-center"
+            >
+              <i class="fas fa-map-marker-alt ms-2 text-white"></i>
+              <p class="text-white m-0 ms-3">
+                267 Park Avenue New York, NY 90210
+              </p>
             </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="d-flex">
+              <div class="email_cont d-flex">
+                <i class="fas fa-envelope text-white lh-base"></i>
+                <p class="text-white m-0 ms-3">Quick Email</p>
+              </div>
+              <div class="line_col"></div>
+              <div class="call_cont d-flex">
+                <i class="fas fa-phone-alt text-white lh-base"></i>
+                <p class="text-white m-0 ms-3">+1 (409) 987–5874</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="image/logo_tradex.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav navbar_width">
-                    <li class="nav-item hover_drop">
-                        <a class="nav-link" href="#">Home
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover">
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link link_drop">
-                                    Home01
-                                </a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link link_drop">
-                                    Home02
-                                </a>
-                            </li>
-                        </ul>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo_tradex.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav navbar_width">
+            <li class="nav-item hover_drop">
+              <a class="nav-link" href="#"
+                >Home
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link link_drop"> Home01 </a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link link_drop"> Home02 </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Headers
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style1</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style2</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style3</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Blog Post
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Blog Grid
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid 2 Column</a>
                     </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid 3 Column</a>
                     </li>
-                    <li class="nav-item hover_drop ms-4">
-                        <a class="nav-link" href="#">Headers
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover">
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Header Style1</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Header Style2</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Header Style3</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Header Style4</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid Left Sidebar</a>
                     </li>
-                    <li class="nav-item hover_drop ms-4">
-                        <a class="nav-link" href="#">Blog Post
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover">
-                            <li class="nav-item hover_drop item_drop">
-                                <a href="#" class="nav-link">Blog Grid
-                                    <span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown_hover">
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Grid 2 Column</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Grid 3 Column</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Grid Left Sidebar</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Grid Right Sidebar</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item hover_drop item_drop">
-                                <a href="#" class="nav-link">Blog Masonary
-                                    <span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown_hover">
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Masonary 2 Column</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Masonary 3 Column</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Masonary Left Sidebar</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Masonary Right Sidebar</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item hover_drop item_drop">
-                                <a href="#" class="nav-link">Clasic
-                                    <span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown_hover">
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Full Width</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Full Width Sidebar</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Blog Detail</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid Right Sidebar</a>
                     </li>
-                    <li class="nav-item hover_drop ms-4">
-                        <a class="nav-link" href="#">Services
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover">
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Full Width</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Service 2 Column</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Service 3 Column</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Service 4 Column</a>
-                            </li>
-                        </ul>
+                  </ul>
+                </li>
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Blog Masonary
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary 2 Column</a>
                     </li>
-                    <li class="nav-item hover_drop ms-4">
-                        <a class="nav-link" href="#">Features
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover">
-                            <li class="nav-item hover_drop item_drop">
-                                <a href="#" class="nav-link">Shortcodes
-                                    <span>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown_hover">
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Portfolio Shortcode</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Price Shortcode</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Counter Shortcode</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Client Shortcode</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Feature 2 Column</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Feature 3 Column</a>
-                            </li>
-                            <li class="nav-item item_drop">
-                                <a href="#" class="nav-link">Feature 4 Column</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary 3 Column</a>
                     </li>
-                    <li class="nav-item hover_drop ms-4">
-                        <a class="nav-link" href="#">Pages
-                            <span>
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
-                        </a>
-                        <ul class="dropdown_hover hover_menu">
-                            <li class="nav-item hovering_items">
-                                <ul>
-                                    <h5 class="title-menu">Project Style 1</h5>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">2 Column Grid</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">3 Column Grid</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">2 Column Masonary</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">3 Column Masonary</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item hovering_items">
-                                <ul>
-                                    <h5 class="title-menu">Project Style 2</h5>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">2 Col Grid</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">3 Col Grid</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">2 Col Masonary</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">3 Col Masonary</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item hovering_items">
-                                <ul>
-                                    <h5 class="title-menu">Other Page</h5>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Project Detail</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Team Style 1</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Team Style 2</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Team Detail</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item hovering_items">
-                                <ul>
-                                    <h5 class="title-menu">Other Page</h5>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Pricing</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">FAQ</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">404</a>
-                                    </li>
-                                    <li class="nav-item item_drop">
-                                        <a href="#" class="nav-link">Typography</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary Left Sidebar</a>
                     </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary Right Sidebar</a>
                     </li>
-                </ul>
-            </div>
+                  </ul>
+                </li>
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Clasic
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Full Width</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Full Width Sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Blog Detail</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Services
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Full Width</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 2 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 3 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 4 Column</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Features
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Shortcodes
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Portfolio Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Price Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Counter Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Client Shortcode</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 2 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 3 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 4 Column</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Pages
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover hover_menu">
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Project Style 1</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Column Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Column Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Column Masonary</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Column Masonary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Project Style 2</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Col Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Col Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Col Masonary</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Col Masonary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Other Page</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Project Detail</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Style 1</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Style 2</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Detail</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Other Page</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">404</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Typography</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--  -->
     <section class="pb-5 bg-light">
-        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="position-relative">
-                        <img src="image/slider1.jpg" class="highet_spaic w-100  shadow" alt="صورة 1">
-                        <div class="container">
-                            <div
-                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
-                                <div class="padding_spicial">
-                                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
-                                    <p class="mb-4"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean
-                                        commodo ligula. adipiscing elit uiooenean commodo ligula.</p>
-                                    <a href="#"
-                                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>get start now</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                    <a href="#"
-                                        class="btn text-white custom-btn position-relative overflow-hidden position-relative">
-                                        <span>contact us</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        id="customCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="position-relative">
+              <img
+                src="image/slider1.jpg"
+                class="highet_spaic w-100 shadow"
+                alt="صورة 1"
+              />
+              <div class="container">
+                <div
+                  class="overly position-absolute top-50 start-50 translate-middle text-center text-white"
+                >
+                  <div class="padding_spicial">
+                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
+                    <p class="mb-4">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                      uiooenean commodo ligula. adipiscing elit uiooenean
+                      commodo ligula.
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>get start now</span>
+                      <div class="hover_after"></div>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn text-white custom-btn position-relative overflow-hidden position-relative"
+                    >
+                      <span>contact us</span>
+                      <div class="hover_after"></div>
+                    </a>
+                  </div>
                 </div>
-
-                <div class="carousel-item">
-                    <div class="position-relative">
-                        <img src="image/slider2.jpg" class="highet_spaic w-100  shadow" alt="صورة 2">
-                        <div class="container">
-                            <div
-                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
-                                <div class="padding_spicial">
-                                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
-                                    <p class="mb-4"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean
-                                        commodo ligula. adipiscing elit uiooenean commodo ligula.</p>
-                                    <a href="#"
-                                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>get start now</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                    <a href="#" class="btn text-white custom-btn position-relative overflow-hidden">
-                                        <span>contact us</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="position-relative">
-                        <img src="image/slider3.jpg" class="highet_spaic w-100  shadow" alt="صورة 2">
-                        <div class="container">
-                            <div
-                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
-                                <div class="padding_spicial">
-                                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
-                                    <p class="mb-4"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean
-                                        commodo ligula. adipiscing elit uiooenean commodo ligula.</p>
-                                    <a href="#"
-                                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>get start now</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                    <a href="#" class="btn text-white custom-btn position-relative overflow-hidden">
-                                        <span>contact us</span>
-                                        <div class="hover_after"></div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="position-relative">
-                        <img src="image/slider4.jpg" class="highet_spaic w-100 shadow" alt="صورة 2">
-                        <div class="container">
-                            <div
-                                class="overly position-absolute top-50 start-50 translate-middle text-center text-white">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+          </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">السابق</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">التالي</span>
-            </button>
+          <div class="carousel-item">
+            <div class="position-relative">
+              <img
+                src="image/slider2.jpg"
+                class="highet_spaic w-100 shadow"
+                alt="صورة 2"
+              />
+              <div class="container">
+                <div
+                  class="overly position-absolute top-50 start-50 translate-middle text-center text-white"
+                >
+                  <div class="padding_spicial">
+                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
+                    <p class="mb-4">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                      uiooenean commodo ligula. adipiscing elit uiooenean
+                      commodo ligula.
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>get start now</span>
+                      <div class="hover_after"></div>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn text-white custom-btn position-relative overflow-hidden"
+                    >
+                      <span>contact us</span>
+                      <div class="hover_after"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="position-relative">
+              <img
+                src="image/slider3.jpg"
+                class="highet_spaic w-100 shadow"
+                alt="صورة 2"
+              />
+              <div class="container">
+                <div
+                  class="overly position-absolute top-50 start-50 translate-middle text-center text-white"
+                >
+                  <div class="padding_spicial">
+                    <h2 class="fw-bold">What You Do Today For Peoples3</h2>
+                    <p class="mb-4">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                      uiooenean commodo ligula. adipiscing elit uiooenean
+                      commodo ligula.
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>get start now</span>
+                      <div class="hover_after"></div>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn text-white custom-btn position-relative overflow-hidden"
+                    >
+                      <span>contact us</span>
+                      <div class="hover_after"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="position-relative">
+              <img
+                src="image/slider4.jpg"
+                class="highet_spaic w-100 shadow"
+                alt="صورة 2"
+              />
+              <div class="container">
+                <div
+                  class="overly position-absolute top-50 start-50 translate-middle text-center text-white"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">السابق</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">التالي</span>
+        </button>
+      </div>
     </section>
     <section id="about">
-        <div class="container">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25 " style="height: 2px;"></div>
-                        <div class="bg-primary w-50  mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">About Us</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50  mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25 " style="height: 2px;"></div>
-                    </div>
-                </div>
-
-                <p class="text-center text-muted mb-5">About Us</p>
+      <div class="container">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-8 position-relative">
-                    <div class="details_box position-absolute bg-light">
-                        <div class="px-2">
-                            <div class="row align-items-center justify-content-between">
-                                <i class="fas fa-bullhorn col-lg-3 fs-2" style="color: #1a1a1a;"></i>
-                                <div class="post_titel col-lg-9">
-                                    <h5>markating</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center justify-content-between">
-                                <i class="fas fa-sliders-h col-lg-3 fs-2" style="color: #1a1a1a;"></i>
-                                <div class="post_titel col-lg-9">
-                                    <h5>great usability</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center justify-content-between">
-                                <i class="fas fa-laptop-code col-lg-3 fs-2" style="color: #1a1a1a;"></i>
-                                <div class="post_titel col-lg-9">
-                                    <h5>unique design</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center justify-content-between">
-                                <i class="fas fa-thumbs-up col-lg-3 fs-2" style="color: #1a1a1a;"></i>
-                                <div class="post_titel col-lg-9">
-                                    <h5>quick & powerful</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mock-3">
-                        <img src="image/abt-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="posts_titels">
-                        <p>
-                            Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique.
-                            Nullam urna metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error
-                            sit voluptatem accusantium doloremque laudantium totam remrutrumDorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Sed ut perspiciatis.
-                        </p>
-                        <p>
-                            Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique.
-                            Nullam urna metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error
-                            sit voluptatem accusantium doloremque laudantium totam remrutrumDorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Sed ut perspiciatis.
-                        </p>
-                        <a href="#"
-                            class="btn btn-primary custom-btn position-relative overflow-hidden position-relative">
-                            <span> Learn More </span>
-                            <div class="hover_after"></div>
-                        </a>
-                    </div>
-                </div>
+
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              About Us
+            </h2>
+
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
+
+          <p class="text-center text-muted mb-5">About Us</p>
         </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8 position-relative">
+            <div class="details_box position-absolute bg-light">
+              <div class="px-2">
+                <div class="row align-items-center justify-content-between">
+                  <i
+                    class="fas fa-bullhorn col-lg-3 fs-2"
+                    style="color: #1a1a1a"
+                  ></i>
+                  <div class="post_titel col-lg-9">
+                    <h5>markating</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, Aenea jkn consectetuer
+                      adipiscn elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                  <i
+                    class="fas fa-sliders-h col-lg-3 fs-2"
+                    style="color: #1a1a1a"
+                  ></i>
+                  <div class="post_titel col-lg-9">
+                    <h5>great usability</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, Aenea jkn consectetuer
+                      adipiscn elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                  <i
+                    class="fas fa-laptop-code col-lg-3 fs-2"
+                    style="color: #1a1a1a"
+                  ></i>
+                  <div class="post_titel col-lg-9">
+                    <h5>unique design</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, Aenea jkn consectetuer
+                      adipiscn elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                  <i
+                    class="fas fa-thumbs-up col-lg-3 fs-2"
+                    style="color: #1a1a1a"
+                  ></i>
+                  <div class="post_titel col-lg-9">
+                    <h5>quick & powerful</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, Aenea jkn consectetuer
+                      adipiscn elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mock-3">
+              <img src="image/abt-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="posts_titels">
+              <p>
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                blandit nisi a dictum tristique. Nullam urna metus, vestibulum
+                ac sodales eSed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium totam
+                remrutrumDorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed ut perspiciatis.
+              </p>
+              <p>
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                blandit nisi a dictum tristique. Nullam urna metus, vestibulum
+                ac sodales eSed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium totam
+                remrutrumDorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed ut perspiciatis.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary custom-btn position-relative overflow-hidden position-relative"
+              >
+                <span> Learn More </span>
+                <div class="hover_after"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="counter_theme mt-5 bg-light">
-        <div class="container py-5 ">
-            <div class="row text-center">
-
-                <!-- Total Projects -->
-                <div class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4">
-                    <div class="bg-white rounded shadow-sm p-3 d-inline-block">
-                        <i class="fas fa-desktop fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-3 text-start">
-                        <h4 class="mt-3 mb-0 font-weight-bold">8000</h4>
-                        <p class="text-muted">Total Projects</p>
-                    </div>
-                </div>
-
-                <!-- Won Awards -->
-                <div class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4">
-                    <div class="bg-white rounded shadow-sm p-3 d-inline-block">
-                        <i class="fas fa-trophy fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-3 text-start">
-                        <h4 class="mt-3 mb-0 font-weight-bold">810</h4>
-                        <p class="text-muted">Won Awards</p>
-                    </div>
-                </div>
-
-                <!-- Happy Clients -->
-                <div class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4">
-                    <div class="bg-white rounded shadow-sm p-3 d-inline-block">
-                        <i class="fas fa-smile fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-3 text-start">
-                        <h4 class="mt-3 mb-0 font-weight-bold">2000</h4>
-                        <p class="text-muted">Happy Clients</p>
-                    </div>
-                </div>
-
-                <!-- Years Experience -->
-                <div class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4">
-                    <div class="bg-white rounded shadow-sm p-3 d-inline-block">
-                        <i class="fas fa-calendar-alt fa-2x text-primary"></i>
-                    </div>
-                    <div class="ms-3 text-start">
-                        <h4 class="mt-3 mb-0 font-weight-bold">20</h4>
-                        <p class="text-muted">Years Experience</p>
-                    </div>
-                </div>
-
+      <div class="container py-5">
+        <div class="row text-center">
+          <!-- Total Projects -->
+          <div
+            class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4"
+          >
+            <div class="bg-white rounded shadow-sm p-3 d-inline-block">
+              <i class="fas fa-desktop fa-2x text-primary"></i>
             </div>
+            <div class="ms-3 text-start">
+              <h4 class="mt-3 mb-0 font-weight-bold">8000</h4>
+              <p class="text-muted">Total Projects</p>
+            </div>
+          </div>
+
+          <!-- Won Awards -->
+          <div
+            class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4"
+          >
+            <div class="bg-white rounded shadow-sm p-3 d-inline-block">
+              <i class="fas fa-trophy fa-2x text-primary"></i>
+            </div>
+            <div class="ms-3 text-start">
+              <h4 class="mt-3 mb-0 font-weight-bold">810</h4>
+              <p class="text-muted">Won Awards</p>
+            </div>
+          </div>
+
+          <!-- Happy Clients -->
+          <div
+            class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4"
+          >
+            <div class="bg-white rounded shadow-sm p-3 d-inline-block">
+              <i class="fas fa-smile fa-2x text-primary"></i>
+            </div>
+            <div class="ms-3 text-start">
+              <h4 class="mt-3 mb-0 font-weight-bold">2000</h4>
+              <p class="text-muted">Happy Clients</p>
+            </div>
+          </div>
+
+          <!-- Years Experience -->
+          <div
+            class="d-flex align-items-center justify-content-center col-md-3 col-sm-12 mb-4"
+          >
+            <div class="bg-white rounded shadow-sm p-3 d-inline-block">
+              <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+            </div>
+            <div class="ms-3 text-start">
+              <h4 class="mt-3 mb-0 font-weight-bold">20</h4>
+              <p class="text-muted">Years Experience</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="services" class="bg_img position-relative">
-        <div class="overly">
-            <div class="container">
-                <div class="header_adrees position-relative">
-                    <div class="row align-items-center justify-content-center my-4">
-                        <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                            <div class="bg-primary w-25" style="height: 2px;"></div>
-                            <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                        </div>
+      <div class="overly">
+        <div class="container">
+          <div class="header_adrees position-relative">
+            <div class="row align-items-center justify-content-center my-4">
+              <div
+                class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+              >
+                <div class="bg-primary w-25" style="height: 2px"></div>
+                <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
+              </div>
 
-                        <h2 class="col-auto mx-3 font-weight-bold text-light m-0">Our Services</h2>
+              <h2 class="col-auto mx-3 font-weight-bold text-light m-0">
+                Our Services
+              </h2>
 
-                        <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                            <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                            <div class="bg-primary w-25" style="height: 2px;"></div>
-                        </div>
-                    </div>
-
-                    <p class="text-center text-light mx_w_num mb-5">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
-                        labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
-                        dipisicing
-                        elit, sed do eiusmod tempor.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fas fa-cloud fs-1"></i>
-                                <h4 class="serv_head fs-1">online marketting</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>online marketting</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fas fa-laptop-code fs-1"></i>
-                                <h4 class="serv_head fs-1">web design</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>web design</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fas fa-edit fs-1"></i>
-                                <h4 class="serv_head fs-1">graphic design</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>graphic design</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fas fa-desktop fs-1"></i>
-                                <h4 class="serv_head fs-1">web development</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>web development</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fas fa-network-wired fs-1"></i>
-                                <h4 class="serv_head fs-1">networking</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>networking</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
-                        <div class="service_col position-relative overflow-hidden">
-                            <div class="service_wrap overflow-hidden">
-                                <i class="fab fa-wordpress fs-1"></i>
-                                <h4 class="serv_head fs-1">wordpress theme</h4>
-                                <div class="ser_overlay position-absolute overflow-hidden">
-                                    <div class="overlay_content overflow-hidden">
-                                        <h4>wordpress theme</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
-
-                                        <a href="#"
-                                            class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                            <span> read more </span>
-                                            <div class="hover_after"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div
+                class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+              >
+                <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+                <div class="bg-primary w-25" style="height: 2px"></div>
+              </div>
             </div>
+
+            <p class="text-center text-light mx_w_num mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+              elit, sed do eiusmod tempor.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fas fa-cloud fs-1"></i>
+                  <h4 class="serv_head fs-1">online marketting</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>online marketting</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fas fa-laptop-code fs-1"></i>
+                  <h4 class="serv_head fs-1">web design</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>web design</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-lg-2 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fas fa-edit fs-1"></i>
+                  <h4 class="serv_head fs-1">graphic design</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>graphic design</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fas fa-desktop fs-1"></i>
+                  <h4 class="serv_head fs-1">web development</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>web development</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fas fa-network-wired fs-1"></i>
+                  <h4 class="serv_head fs-1">networking</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>networking</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-lg-0 mb-2">
+              <div class="service_col position-relative overflow-hidden">
+                <div class="service_wrap overflow-hidden">
+                  <i class="fab fa-wordpress fs-1"></i>
+                  <h4 class="serv_head fs-1">wordpress theme</h4>
+                  <div class="ser_overlay position-absolute overflow-hidden">
+                    <div class="overlay_content overflow-hidden">
+                      <h4>wordpress theme</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor. incididunt ut labore et
+                        dolore. Lorem ipsum dolor sit amet.
+                      </p>
+
+                      <a
+                        href="#"
+                        class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                      >
+                        <span> read more </span>
+                        <div class="hover_after"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="our_works" class="mt-3">
-        <div class="container py-5">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                        <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">Our Work</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                    </div>
-                </div>
-
-                <p class="text-center text-dark mx_w_num mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
-                    labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
-                    dipisicing
-                    elit, sed do eiusmod tempor.
-                </p>
+      <div class="container py-5">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
-            <ul class="nav nav-tabs mb-4 justify-content-center" id="projectTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all"
-                        type="button">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#creative" type="button">Creative
-                        Design</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#development"
-                        type="button">Development</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#graphic" type="button">Graphic
-                        Design</button>
-                </li>
-            </ul>
 
-            <div class="tab-content">
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              Our Work
+            </h2>
 
-                <div class="tab-pane fade show active" id="all">
-                    <div class="row g-4">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work1.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Development, Graphic</small><br>
-                                        <strong>Project 1</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work2.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Creative Design</small><br>
-                                        <strong>Project 2</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work3.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Development</small><br>
-                                        <strong>Project 3</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work4.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Graphic Design</small><br>
-                                        <strong>Project 4</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work5.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Creative Design</small><br>
-                                        <strong>Project 5</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work6.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Graphic, Networking</small><br>
-                                        <strong>Project 6</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="creative">
-                    <div class="row g-4">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work3.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Creative Design</small><br>
-                                        <strong>Project Creative</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="development">
-                    <div class="row g-4">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work6.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Development</small><br>
-                                        <strong>Project Dev</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="graphic">
-                    <div class="row g-4">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="project-card">
-                                <img src="image/work4.jpg" alt="Project">
-                                <div class="project-overlay">
-                                    <div>
-                                        <small>Graphic Design</small><br>
-                                        <strong>Project Graphic</strong>
-                                    </div>
-                                    <i class="bi bi-plus-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
+
+          <p class="text-center text-dark mx_w_num mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+            elit, sed do eiusmod tempor.
+          </p>
         </div>
+        <ul
+          class="nav nav-tabs mb-4 justify-content-center"
+          id="projectTabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#all"
+              type="button"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#creative"
+              type="button"
+            >
+              Creative Design
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#development"
+              type="button"
+            >
+              Development
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#graphic"
+              type="button"
+            >
+              Graphic Design
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="all">
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work1.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Development, Graphic</small><br />
+                      <strong>Project 1</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work2.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Creative Design</small><br />
+                      <strong>Project 2</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work3.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Development</small><br />
+                      <strong>Project 3</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work4.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Graphic Design</small><br />
+                      <strong>Project 4</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work5.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Creative Design</small><br />
+                      <strong>Project 5</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work6.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Graphic, Networking</small><br />
+                      <strong>Project 6</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="creative">
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work3.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Creative Design</small><br />
+                      <strong>Project Creative</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="development">
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work6.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Development</small><br />
+                      <strong>Project Dev</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="graphic">
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card">
+                  <img src="image/work4.jpg" alt="Project" />
+                  <div class="project-overlay">
+                    <div>
+                      <small>Graphic Design</small><br />
+                      <strong>Project Graphic</strong>
+                    </div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="hero_section" class="bg_image">
-        <div class="height_section_image_bg"></div>
+      <div class="height_section_image_bg"></div>
     </section>
     <section id="team" class="mt-3">
-        <div class="container py-5 text-center">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                        <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">our creative team</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                    </div>
-                </div>
-
-                <p class="text-center text-dark mx_w_num mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
-                    labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
-                    dipisicing
-                    elit, sed do eiusmod tempor.
-                </p>
+      <div class="container py-5 text-center">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
 
-            <div class="row g-4 justify-content-center team_theme">
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              our creative team
+            </h2>
 
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="178" src="image/team1.png" class="card-img-top " alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#"> Jan Wayan</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link justify-content-center">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link justify-content-center">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link justify-content-center">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link justify-content-center">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link justify-content-center">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="195" src="image/team2.png" class="card-img-top " alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#"> Mikal Petersen</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="194" src="image/team3.png" class="card-img-top " alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#">Sara Conor</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="207" src="image/team4.png" class="card-img-top " alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#">milly jackson</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="228" src="image/team5.png" class="card-img-top " alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#">Clark Jackson</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="card border-0">
-                        <img height="370" width="241" src="image/team6.png" class="card-img-top" alt="Team">
-                        <div class="team_det">
-                            <h5>
-                                <a href="#">John Join</a>
-                            </h5>
-                            <h6>Founder</h6>
-                            <p>Lorem ipsum dolor sit amet etgda ut exercitation ullamco consectetuer adipiscing elit
-                                Aenean
-                                commodo ligula.</p>
-                        </div>
-                        <div class="btn-group px_spicial">
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" class="btn btn-primary icon-link">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="clear_bordre"></div>
-                    </div>
-                </div>
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
+
+          <p class="text-center text-dark mx_w_num mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+            elit, sed do eiusmod tempor.
+          </p>
         </div>
+
+        <div class="row g-4 justify-content-center team_theme">
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="178"
+                src="image/team1.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#"> Jan Wayan</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a
+                  href="#"
+                  class="btn btn-primary icon-link justify-content-center"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary icon-link justify-content-center"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary icon-link justify-content-center"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary icon-link justify-content-center"
+                >
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-primary icon-link justify-content-center"
+                >
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="195"
+                src="image/team2.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#"> Mikal Petersen</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="194"
+                src="image/team3.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#">Sara Conor</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="207"
+                src="image/team4.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#">milly jackson</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="228"
+                src="image/team5.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#">Clark Jackson</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img
+                height="370"
+                width="241"
+                src="image/team6.png"
+                class="card-img-top"
+                alt="Team"
+              />
+              <div class="team_det">
+                <h5>
+                  <a href="#">John Join</a>
+                </h5>
+                <h6>Founder</h6>
+                <p>
+                  Lorem ipsum dolor sit amet etgda ut exercitation ullamco
+                  consectetuer adipiscing elit Aenean commodo ligula.
+                </p>
+              </div>
+              <div class="btn-group px_spicial">
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="btn btn-primary icon-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </div>
+              <div class="clear_bordre"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="pricing" class="mt-3">
-        <div class="container py-5 text-center">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                        <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">Our pricing</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                    </div>
-                </div>
-
-                <p class="text-center text-dark mx_w_num mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
-                    labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
-                    dipisicing
-                    elit, sed do eiusmod tempor.
-                </p>
+      <div class="container py-5 text-center">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
 
-            <ul class="nav justify-content-center mb-4" role="tablist">
-                <li class="nav-item">
-                    <button class="btn btn-outline-primary me-2 active" data-bs-toggle="tab" data-bs-target="#monthly"
-                        type="button" role="tab">
-                        Per / Month
-                    </button>
-                </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-primary" data-bs-toggle="tab" data-bs-target="#yearly" type="button"
-                        role="tab">
-                        Per / Year
-                    </button>
-                </li>
-            </ul>
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              Our pricing
+            </h2>
 
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="monthly" role="tabpanel">
-                    <div class="row g-4 justify-content-center">
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Personal</h5>
-                                    <hr>
-                                    <p class="text-muted">From $399</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center style_spicialty">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">business</h5>
-                                    <hr>
-                                    <p class="text-muted">From $899</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-light me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">ultimate</h5>
-                                    <hr>
-                                    <p class="text-muted">From $499</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="yearly" role="tabpanel">
-                    <div class="row g-4 justify-content-center">
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Personal</h5>
-                                    <hr>
-                                    <p class="text-muted">From $399</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center style_spicialty">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">business</h5>
-                                    <hr>
-                                    <p class="text-muted">From $899</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-light me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100 border text-center">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">ultimate</h5>
-                                    <hr>
-                                    <p class="text-muted">From $499</p>
-                                    <ul class="list-unstyled">
-                                        <li>✔ 05 PSD Pack</li>
-                                        <li>✔ 05 Wordpress Pack</li>
-                                        <li>✔ 150 Support Ticket</li>
-                                    </ul>
-                                    <button class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                                        <span>GET STARTED NOW</span>
-                                        <div class="hover_after"></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
+
+          <p class="text-center text-dark mx_w_num mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+            elit, sed do eiusmod tempor.
+          </p>
         </div>
+
+        <ul class="nav justify-content-center mb-4" role="tablist">
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-primary me-2 active"
+              data-bs-toggle="tab"
+              data-bs-target="#monthly"
+              type="button"
+              role="tab"
+            >
+              Per / Month
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="tab"
+              data-bs-target="#yearly"
+              type="button"
+              role="tab"
+            >
+              Per / Year
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="monthly" role="tabpanel">
+            <div class="row g-4 justify-content-center">
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Personal</h5>
+                    <hr />
+                    <p class="text-muted">From $399</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center style_spicialty">
+                  <div class="card-body">
+                    <h5 class="fw-bold">business</h5>
+                    <hr />
+                    <p class="text-muted">From $899</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-light me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center">
+                  <div class="card-body">
+                    <h5 class="fw-bold">ultimate</h5>
+                    <hr />
+                    <p class="text-muted">From $499</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="yearly" role="tabpanel">
+            <div class="row g-4 justify-content-center">
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Personal</h5>
+                    <hr />
+                    <p class="text-muted">From $399</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center style_spicialty">
+                  <div class="card-body">
+                    <h5 class="fw-bold">business</h5>
+                    <hr />
+                    <p class="text-muted">From $899</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-light me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="crds_flex col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 border text-center">
+                  <div class="card-body">
+                    <h5 class="fw-bold">ultimate</h5>
+                    <hr />
+                    <p class="text-muted">From $499</p>
+                    <ul class="list-unstyled">
+                      <li>✔ 05 PSD Pack</li>
+                      <li>✔ 05 Wordpress Pack</li>
+                      <li>✔ 150 Support Ticket</li>
+                    </ul>
+                    <button
+                      class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+                    >
+                      <span>GET STARTED NOW</span>
+                      <div class="hover_after"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="subscribe" class="mt-3 bg-dark">
-        <div class="container">
-            <div class="row padding_row">
-                <div class="col-lg-5 col-sm-12">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-envelope text-white lh-base fs-1"></i>
-                        <p class="text-white m-0 ms-3 fs-1">
-                            Subscribe now for news
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-sm-12">
-                    <div class="d-flex align-items-center">
-                        <input type="email" name="email" class="form-control" placeholder="Input your mail"
-                            aria-required="true">
-                        <a href="#" class="btn btn-primary me-2 custom-btn position-relative overflow-hidden">
-                            <span>subscribe</span>
-                            <div class="hover_after"></div>
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row padding_row">
+          <div class="col-lg-5 col-sm-12">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope text-white lh-base fs-1"></i>
+              <p class="text-white m-0 ms-3 fs-1">Subscribe now for news</p>
             </div>
+          </div>
+          <div class="col-lg-7 col-sm-12">
+            <div class="d-flex align-items-center">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Input your mail"
+                aria-required="true"
+              />
+              <a
+                href="#"
+                class="btn btn-primary me-2 custom-btn position-relative overflow-hidden"
+              >
+                <span>subscribe</span>
+                <div class="hover_after"></div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="testimonial" class="my-5">
-        <div class="container">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                        <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">Testimonial</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-1.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Eline Lockod</h6>
-                                        <small class="text-primary d-block">Marketing Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-2.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Johy Michel</h6>
-                                        <small class="text-primary d-block">Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              Testimonial
+            </h2>
 
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-3.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Person 3</h6>
-                                        <small class="text-primary d-block">Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-4.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Person 4</h6>
-                                        <small class="text-primary d-block">Marketing Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-5.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Person 5</h6>
-                                        <small class="text-primary d-block">Senior Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div
-                                    class="border rounded ms-5 p-3 d-lg-flex d-sm-block text-center justify-content-center">
-                                    <img src="image/testi-avtar-1.jpg" class="me-3 rounded" width="80" height="80"
-                                        alt="...">
-                                    <div>
-                                        <h6 class="fw-bold mb-1">Person 5</h6>
-                                        <small class="text-primary d-block">Senior Manager</small>
-                                        <p class="mb-0 small text-muted">Donec pede justo, fringilla vel, aliquet
-                                            nec...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
         </div>
+        <div class="owl-carousel">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Tradex/image/testi-avtar-1.jpg"
+                  class="img_fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Tradex/image/testi-avtar-2.jpg"
+                  class="img_fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Tradex/image/testi-avtar-3.jpg"
+                  class="img_fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Tradex/image/testi-avtar-4.jpg"
+                  class="img_fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../Tradex/image/testi-avtar-5.jpg"
+                  class="img_fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="latest_blog" class="mt-3">
-        <div class="container py-5">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2">
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                        <div class="bg-primary w-50 mt-1" style="height: 2px;"></div>
-                    </div>
-
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">Latest Blog</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-50 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-25" style="height: 2px;"></div>
-                    </div>
-                </div>
-
-                <p class="text-center text-dark mx_w_num mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
-                    labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
-                    dipisicing
-                    elit, sed do eiusmod tempor.
-                </p>
+      <div class="container py-5">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-5 col-sm-12">
-                    <div class="card shadow_card border-0 overflow-hidden">
-                        <div class="row g-0 overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img src="image/gallery_1.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body row">
-                                <div class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon">
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-google-plus-g"></i></a>
-                                    <a href="#" class="text-white"><i class="fab fa-tumblr"></i></a>
-                                </div>
-                                <div class="col-11">
-                                    <h6 class="card-title fw-bold">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
-                                    <div class="small text-muted mb-2">
-                                        <i class="fas fa-user me-1"></i> By Dtm_demo
-                                        <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
-                                    </div>
-                                    <hr class="border-primary">
-                                    <p class="card-text text-muted">Lorem ipsum dolor sit amet, rcquisc adipiscing
-                                        elit...
-                                    </p>
-                                    <a href="#" class="fw-bold text-decoration-none btn_hover">Read More <i
-                                            class="fas fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-12">
-                    <div class="card shadow_card border-0 overflow-hidden">
-                        <div class="row g-0 overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img src="image/gallery_2.jpg" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body row">
-                                <div class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon">
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-google-plus-g"></i></a>
-                                    <a href="#" class="text-white"><i class="fab fa-tumblr"></i></a>
-                                </div>
-                                <div class="col-11">
-                                    <h6 class="card-title fw-bold">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
-                                    <div class="small text-muted mb-2">
-                                        <i class="fas fa-user me-1"></i> By Dtm_demo
-                                        <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
-                                    </div>
-                                    <hr class="border-primary">
-                                    <p class="card-text text-muted">Lorem ipsum dolor sit amet, rcquisc adipiscing
-                                        elit...
-                                    </p>
-                                    <a href="#" class="fw-bold text-decoration-none btn_hover">Read More <i
-                                            class="fas fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-12">
-                    <div class="card shadow_card border-0 overflow-hidden">
-                        <div class="row g-0 overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img src="image/gallery_3.jpg" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body row">
-                                <div class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon">
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-white mb-3"><i class="fab fa-google-plus-g"></i></a>
-                                    <a href="#" class="text-white"><i class="fab fa-tumblr"></i></a>
-                                </div>
-                                <div class="col-11">
-                                    <h6 class="card-title fw-bold">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
-                                    <div class="small text-muted mb-2">
-                                        <i class="fas fa-user me-1"></i> By Dtm_demo
-                                        <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
-                                    </div>
-                                    <hr class="border-primary">
-                                    <p class="card-text text-muted">Lorem ipsum dolor sit amet, rcquisc adipiscing
-                                        elit...
-                                    </p>
-                                    <a href="#" class="fw-bold text-decoration-none btn_hover">Read More <i
-                                            class="fas fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              Latest Blog
+            </h2>
 
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
             </div>
+          </div>
+
+          <p class="text-center text-dark mx_w_num mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+            elit, sed do eiusmod tempor.
+          </p>
         </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="card shadow_card border-0 overflow-hidden">
+              <div class="row g-0 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="image/gallery_1.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div
+                    class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon"
+                  >
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="text-white"
+                      ><i class="fab fa-tumblr"></i
+                    ></a>
+                  </div>
+                  <div class="col-11">
+                    <h6 class="card-title fw-bold">
+                      Four Ways To Cheer And Plan Your Self Up On Blue
+                    </h6>
+                    <div class="small text-muted mb-2">
+                      <i class="fas fa-user me-1"></i> By Dtm_demo
+                      <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
+                    </div>
+                    <hr class="border-primary" />
+                    <p class="card-text text-muted">
+                      Lorem ipsum dolor sit amet, rcquisc adipiscing elit...
+                    </p>
+                    <a href="#" class="fw-bold text-decoration-none btn_hover"
+                      >Read More <i class="fas fa-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="card shadow_card border-0 overflow-hidden">
+              <div class="row g-0 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="image/gallery_2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div
+                    class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon"
+                  >
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="text-white"
+                      ><i class="fab fa-tumblr"></i
+                    ></a>
+                  </div>
+                  <div class="col-11">
+                    <h6 class="card-title fw-bold">
+                      Four Ways To Cheer And Plan Your Self Up On Blue
+                    </h6>
+                    <div class="small text-muted mb-2">
+                      <i class="fas fa-user me-1"></i> By Dtm_demo
+                      <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
+                    </div>
+                    <hr class="border-primary" />
+                    <p class="card-text text-muted">
+                      Lorem ipsum dolor sit amet, rcquisc adipiscing elit...
+                    </p>
+                    <a href="#" class="fw-bold text-decoration-none btn_hover"
+                      >Read More <i class="fas fa-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="card shadow_card border-0 overflow-hidden">
+              <div class="row g-0 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="image/gallery_3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div
+                    class="col-1 d-flex flex-column align-items-center py-3 bg-dark hover_bg_icon"
+                  >
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="text-white mb-3"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="text-white"
+                      ><i class="fab fa-tumblr"></i
+                    ></a>
+                  </div>
+                  <div class="col-11">
+                    <h6 class="card-title fw-bold">
+                      Four Ways To Cheer And Plan Your Self Up On Blue
+                    </h6>
+                    <div class="small text-muted mb-2">
+                      <i class="fas fa-user me-1"></i> By Dtm_demo
+                      <i class="fas fa-calendar-alt ms-3 me-1"></i> 19 Dec 2018
+                    </div>
+                    <hr class="border-primary" />
+                    <p class="card-text text-muted">
+                      Lorem ipsum dolor sit amet, rcquisc adipiscing elit...
+                    </p>
+                    <a href="#" class="fw-bold text-decoration-none btn_hover"
+                      >Read More <i class="fas fa-arrow-right ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="meet_our_clients" class="mt-3">
-        <div class="container py-5">
-            <div class="header_adrees position-relative">
-                <div class="row align-items-center justify-content-center my-4">
+      <div class="container py-5">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              meet our clients
+            </h2>
 
-                    <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">meet our clients</h2>
-
-                    <div class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2">
-                        <div class="bg-primary w-25 mb-1" style="height: 2px;"></div>
-                        <div class="bg-primary w-50" style="height: 2px;"></div>
-                    </div>
-                </div>
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-25 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-50" style="height: 2px"></div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="partner_img d-lg-block d-none">
-                    <img src="image/partner_slide_man.png" alt="man">
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-lg-offset-3">
-                        <div class="row">
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner_g1.png" alt="partners">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner_g2.png" alt="partners">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner_g3.png" alt="partners">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner_g4.png" alt="partners">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner_g5.png" alt="partners">
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="partner_grid">
-                                    <img src="image/partner2.png" alt="partners">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="partner_img d-lg-block d-none">
+            <img src="image/partner_slide_man.png" alt="man" />
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-lg-offset-3">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner_g1.png" alt="partners" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner_g2.png" alt="partners" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner_g3.png" alt="partners" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner_g4.png" alt="partners" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner_g5.png" alt="partners" />
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="partner_grid">
+                    <img src="image/partner2.png" alt="partners" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="grate_work" class="bg-primary">
-        <div class="container">
-            <div class="row align-items-center justify-content-evenly">
-                <div class="col-8">
-                    <h4 class="text-white">if you like this grate work ?? for you site...</h4>
-                </div>
-                <div class="col-3 click">
-                    <a href="#" class="btn rounded-pill text-dark bg-light custom-btn position-relative overflow-hidden position-relative">
-                        <span>purchase now</span>
-                        <div class="hover_after"></div>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-8">
+            <h4 class="text-white">
+              if you like this grate work ?? for you site...
+            </h4>
+          </div>
+          <div class="col-3 click">
+            <a
+              href="#"
+              class="btn rounded-pill text-dark bg-light custom-btn position-relative overflow-hidden position-relative"
+            >
+              <span>purchase now</span>
+              <div class="hover_after"></div>
+            </a>
+          </div>
         </div>
-        <div class="div_icon_postion">
-            <i class="fas fa-phone-volume fa-4x text-white"></i>
-        </div>
+      </div>
+      <div class="div_icon_postion">
+        <i class="fas fa-phone-volume fa-4x text-white"></i>
+      </div>
     </section>
     <footer class="bg-dark text-light pt-5">
-        <div class="container">
-            <div class="row gy-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2 text-primary"></i>123
+                Street Market, Life Plaza, New York
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2 text-primary"></i>987654321
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2 text-primary"></i>team@gmail.com
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-md-4">
-                    <h5 class="border-bottom pb-2">Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i>123 Street Market, Life
-                            Plaza, New York</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2 text-primary"></i>987654321</li>
-                        <li><i class="fas fa-envelope me-2 text-primary"></i>team@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h5 class="border-bottom pb-2">Posts</h5>
-                    <div class="d-flex mb-3">
-                        <img src="image/slider1.jpg" class="me-3 height_spicial" alt="post" />
-                        <div>
-                            <p class="mb-1">Four ways to cheer and plan your self up</p>
-                            <small><i class="fas fa-calendar-alt me-1"></i> December 19, 2018</small>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <img src="image/slider2.jpg" class="me-3 height_spicial" alt="post" />
-                        <div>
-                            <p class="mb-1">Four ways to cheer and plan your self up</p>
-                            <small><i class="fas fa-calendar-alt me-1"></i> December 19, 2018</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <h5 class="border-bottom pb-2">Popular</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-light text-dark">Accountancy</span>
-                        <span class="badge bg-light text-dark">Affiliate</span>
-                        <span class="badge bg-light text-dark">Branding</span>
-                        <span class="badge bg-light text-dark">Construction</span>
-                        <span class="badge bg-light text-dark">Design</span>
-                        <span class="badge bg-light text-dark">Drupal</span>
-                        <span class="badge bg-light text-dark">Education</span>
-                        <span class="badge bg-light text-dark">Graphics</span>
-                        <span class="badge bg-light text-dark">Joomla</span>
-                        <span class="badge bg-light text-dark">Marketing</span>
-                        <span class="badge bg-light text-dark">Money</span>
-                        <span class="badge bg-light text-dark">Tally</span>
-                        <span class="badge bg-light text-dark">Transform</span>
-                        <span class="badge bg-light text-dark">Website</span>
-                        <span class="badge bg-light text-dark">Wordpress</span>
-                    </div>
-                </div>
-
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Posts</h5>
+            <div class="d-flex mb-3">
+              <img
+                src="image/slider1.jpg"
+                class="me-3 height_spicial"
+                alt="post"
+              />
+              <div>
+                <p class="mb-1">Four ways to cheer and plan your self up</p>
+                <small
+                  ><i class="fas fa-calendar-alt me-1"></i> December 19,
+                  2018</small
+                >
+              </div>
             </div>
-
-            <div class="text-center mt-5 pb-3 border-top pt-3">
-                <small class="text-primary">© 2019 Developed By DTM Theme</small>
+            <div class="d-flex">
+              <img
+                src="image/slider2.jpg"
+                class="me-3 height_spicial"
+                alt="post"
+              />
+              <div>
+                <p class="mb-1">Four ways to cheer and plan your self up</p>
+                <small
+                  ><i class="fas fa-calendar-alt me-1"></i> December 19,
+                  2018</small
+                >
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Popular</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark">Accountancy</span>
+              <span class="badge bg-light text-dark">Affiliate</span>
+              <span class="badge bg-light text-dark">Branding</span>
+              <span class="badge bg-light text-dark">Construction</span>
+              <span class="badge bg-light text-dark">Design</span>
+              <span class="badge bg-light text-dark">Drupal</span>
+              <span class="badge bg-light text-dark">Education</span>
+              <span class="badge bg-light text-dark">Graphics</span>
+              <span class="badge bg-light text-dark">Joomla</span>
+              <span class="badge bg-light text-dark">Marketing</span>
+              <span class="badge bg-light text-dark">Money</span>
+              <span class="badge bg-light text-dark">Tally</span>
+              <span class="badge bg-light text-dark">Transform</span>
+              <span class="badge bg-light text-dark">Website</span>
+              <span class="badge bg-light text-dark">Wordpress</span>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
 
+        <div class="text-center mt-5 pb-3 border-top pt-3">
+          <small class="text-primary">© 2019 Developed By DTM Theme</small>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../sesionjs/js/owl.carousel.min.js"></script>
+    <script src="../sesionjs/js/owl_carousel.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
