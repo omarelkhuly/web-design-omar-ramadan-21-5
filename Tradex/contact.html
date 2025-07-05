@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>tradex-premium</title>
+  </head>
+
+  <body class="m-0 p-0 font_family" onscroll="toggleScrollButton()">
+    <header class="bg-primary text-center p-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 d-flex">
+            <ul class="nav nav_width">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5" href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="line_col"></div>
+            <div
+              class="location d-flex align-items-center justify-content-center"
+            >
+              <i class="fas fa-map-marker-alt ms-2 text-white"></i>
+              <p class="text-white m-0 ms-3">
+                267 Park Avenue New York, NY 90210
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="d-flex">
+              <div class="email_cont d-flex">
+                <i class="fas fa-envelope text-white lh-base"></i>
+                <p class="text-white m-0 ms-3">Quick Email</p>
+              </div>
+              <div class="line_col"></div>
+              <div class="call_cont d-flex">
+                <i class="fas fa-phone-alt text-white lh-base"></i>
+                <p class="text-white m-0 ms-3">+1 (409) 987–5874</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo_tradex.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav navbar_width">
+            <li class="nav-item hover_drop">
+              <a class="nav-link" href="index.html"
+                >Home
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="index.html" class="nav-link link_drop"> Home01 </a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="index.html" class="nav-link link_drop"> Home02 </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Headers
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style1</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style2</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style3</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Header Style4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Blog Post
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Blog Grid
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid 2 Column</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid 3 Column</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid Left Sidebar</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Grid Right Sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Blog Masonary
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary 2 Column</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary 3 Column</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary Left Sidebar</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Masonary Right Sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Clasic
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Full Width</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Full Width Sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Blog Detail</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Services
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Full Width</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 2 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 3 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Service 4 Column</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Features
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover">
+                <li class="nav-item hover_drop item_drop">
+                  <a href="#" class="nav-link"
+                    >Shortcodes
+                    <span>
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                  <ul class="dropdown_hover">
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Portfolio Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Price Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Counter Shortcode</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Client Shortcode</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 2 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 3 Column</a>
+                </li>
+                <li class="nav-item item_drop">
+                  <a href="#" class="nav-link">Feature 4 Column</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item hover_drop ms-4">
+              <a class="nav-link" href="#"
+                >Pages
+                <span>
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown_hover hover_menu">
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Project Style 1</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Column Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Column Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Column Masonary</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Column Masonary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Project Style 2</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Col Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Col Grid</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">2 Col Masonary</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">3 Col Masonary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Other Page</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Project Detail</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Style 1</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Style 2</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Team Detail</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item hovering_items">
+                  <ul>
+                    <h5 class="title-menu">Other Page</h5>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">404</a>
+                    </li>
+                    <li class="nav-item item_drop">
+                      <a href="#" class="nav-link">Typography</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="hero_bg" class="mb-3">
+      <div class="overly">
+        <div class="container">
+          <div class="contact">
+            <h1>Contact</h1>
+          </div>
+        </div>
+        <div class="bottom_hero">
+          <p>
+            <a class="link_pageToHome" href="index.html">
+                <span>Home</span>
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            CONTACT
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contactInfo" class="my-4">
+      <div class="container">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
+            </div>
+
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              contact info
+            </h2>
+
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-12">
+            <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+            <h5>Address</h5>
+            <p>267-A, Street Name Park Sera Avenue,<br />New York, NY 90210</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+            <h5>Call Us</h5>
+            <p>Phone 1: (+098) 7654 3210</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+            <h5>Email</h5>
+            <p>support@company.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactForm" class="my-4">
+      <div class="container">
+        <div class="header_adrees position-relative">
+          <div class="row align-items-center justify-content-center my-4">
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-end mr-2"
+            >
+              <div class="bg-primary w-25" style="height: 2px"></div>
+              <div class="bg-primary w-50 mt-1" style="height: 2px"></div>
+            </div>
+
+            <h2 class="col-auto mx-3 font-weight-bold text-dark m-0">
+              get in touch
+            </h2>
+
+            <div
+              class="col-lg-2 col-sm-2 col-2 d-flex flex-column align-items-start ml-2"
+            >
+              <div class="bg-primary w-50 mb-1" style="height: 2px"></div>
+              <div class="bg-primary w-25" style="height: 2px"></div>
+            </div>
+          </div>
+        </div>
+        <form
+          onsubmit="return validateForm()"
+          class="row g-3"
+          name="contactForm"
+        >
+          <!-- Name -->
+          <div class="col-md-4">
+            <label class="form-label">Name</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <input type="text" name="name" class="form-control" />
+            </div>
+            <div class="text-danger small" id="nameError"></div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-4">
+            <label class="form-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="fas fa-envelope"></i
+              ></span>
+              <input type="text" name="email" class="form-control" />
+            </div>
+            <div class="text-danger small" id="emailError"></div>
+          </div>
+
+          <!-- Subject -->
+          <div class="col-md-4">
+            <label class="form-label">Subject</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-pen"></i></span>
+              <input type="text" name="subject" class="form-control" />
+            </div>
+            <div class="text-danger small" id="subjectError"></div>
+          </div>
+
+          <!-- Message -->
+          <div class="col-12">
+            <label class="form-label">Your Message</label>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="fas fa-pencil-alt"></i
+              ></span>
+              <textarea name="message" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="text-danger small" id="messageError"></div>
+          </div>
+
+          <!-- Button -->
+          <div class="col-12 text-start">
+            <button type="submit" class="btn btn-primary px-4 rounded-pill">
+              <i class="fas fa-paper-plane me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="grate_work" class="bg-primary">
+      <div class="container">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-8">
+            <h4 class="text-white">
+              if you like this grate work ?? for you site...
+            </h4>
+          </div>
+          <div class="col-3 click">
+            <a
+              href="#"
+              class="btn rounded-pill text-dark bg-light custom-btn position-relative overflow-hidden position-relative"
+            >
+              <span>purchase now</span>
+              <div class="hover_after"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="div_icon_postion">
+        <i class="fas fa-phone-volume fa-4x text-white"></i>
+      </div>
+    </section>
+    <footer class="bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2 text-primary"></i>123
+                Street Market, Life Plaza, New York
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2 text-primary"></i>987654321
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2 text-primary"></i>team@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Posts</h5>
+            <div class="d-flex mb-3">
+              <img
+                src="image/slider1.jpg"
+                class="me-3 height_spicial"
+                alt="post"
+              />
+              <div>
+                <p class="mb-1">Four ways to cheer and plan your self up</p>
+                <small
+                  ><i class="fas fa-calendar-alt me-1"></i> December 19,
+                  2018</small
+                >
+              </div>
+            </div>
+            <div class="d-flex">
+              <img
+                src="image/slider2.jpg"
+                class="me-3 height_spicial"
+                alt="post"
+              />
+              <div>
+                <p class="mb-1">Four ways to cheer and plan your self up</p>
+                <small
+                  ><i class="fas fa-calendar-alt me-1"></i> December 19,
+                  2018</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="border-bottom pb-2">Popular</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark">Accountancy</span>
+              <span class="badge bg-light text-dark">Affiliate</span>
+              <span class="badge bg-light text-dark">Branding</span>
+              <span class="badge bg-light text-dark">Construction</span>
+              <span class="badge bg-light text-dark">Design</span>
+              <span class="badge bg-light text-dark">Drupal</span>
+              <span class="badge bg-light text-dark">Education</span>
+              <span class="badge bg-light text-dark">Graphics</span>
+              <span class="badge bg-light text-dark">Joomla</span>
+              <span class="badge bg-light text-dark">Marketing</span>
+              <span class="badge bg-light text-dark">Money</span>
+              <span class="badge bg-light text-dark">Tally</span>
+              <span class="badge bg-light text-dark">Transform</span>
+              <span class="badge bg-light text-dark">Website</span>
+              <span class="badge bg-light text-dark">Wordpress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5 pb-3 border-top pt-3">
+          <small class="text-primary">© 2019 Developed By DTM Theme</small>
+        </div>
+      </div>
+    </footer>
+    <button
+      id="scrollTopBtn"
+      onclick="scrollToTop()"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-none"
+      style="z-index: 999999"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js.java_tradex.js"></script>
+  </body>
+</html>

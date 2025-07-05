@@ -7,15 +7,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/media.css"/>
-    <link rel="stylesheet" href="../sesionjs/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../sesionjs/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="../sesionjs/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../sesionjs/css/owl.theme.default.min.css" />
     <title>tradex-premium</title>
   </head>
 
-  <body class="m-0 p-0 font_family">
+  <body class="m-0 p-0 font_family" onscroll="toggleScrollButton()">
     <header class="bg-primary text-center p-1">
       <div class="container">
         <div class="row align-items-center">
@@ -95,7 +95,7 @@
         >
           <ul class="navbar-nav navbar_width">
             <li class="nav-item hover_drop">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="index.html"
                 >Home
                 <span>
                   <i class="fas fa-chevron-down"></i>
@@ -103,10 +103,10 @@
               </a>
               <ul class="dropdown_hover">
                 <li class="nav-item item_drop">
-                  <a href="#" class="nav-link link_drop"> Home01 </a>
+                  <a href="index.html" class="nav-link link_drop"> Home01 </a>
                 </li>
                 <li class="nav-item item_drop">
-                  <a href="#" class="nav-link link_drop"> Home02 </a>
+                  <a href="index.html" class="nav-link link_drop"> Home02 </a>
                 </li>
               </ul>
             </li>
@@ -350,14 +350,14 @@
               </ul>
             </li>
             <li class="nav-item ms-4">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--  -->
-    <section class="pb-5 bg-light">
+    <section id="bgImg" class="pb-5 bg-light">
       <div
         id="customCarousel"
         class="carousel slide"
@@ -643,7 +643,7 @@
               <i class="fas fa-desktop fa-2x text-primary"></i>
             </div>
             <div class="ms-3 text-start">
-              <h4 class="mt-3 mb-0 font-weight-bold">8000</h4>
+              <h4 class="mt-3 mb-0 font-weight-bold count"></h4>
               <p class="text-muted">Total Projects</p>
             </div>
           </div>
@@ -656,7 +656,7 @@
               <i class="fas fa-trophy fa-2x text-primary"></i>
             </div>
             <div class="ms-3 text-start">
-              <h4 class="mt-3 mb-0 font-weight-bold">810</h4>
+              <h4 class="mt-3 mb-0 font-weight-bold count"></h4>
               <p class="text-muted">Won Awards</p>
             </div>
           </div>
@@ -669,7 +669,7 @@
               <i class="fas fa-smile fa-2x text-primary"></i>
             </div>
             <div class="ms-3 text-start">
-              <h4 class="mt-3 mb-0 font-weight-bold">2000</h4>
+              <h4 class="mt-3 mb-0 font-weight-bold count"></h4>
               <p class="text-muted">Happy Clients</p>
             </div>
           </div>
@@ -682,7 +682,7 @@
               <i class="fas fa-calendar-alt fa-2x text-primary"></i>
             </div>
             <div class="ms-3 text-start">
-              <h4 class="mt-3 mb-0 font-weight-bold">20</h4>
+              <h4 class="mt-3 mb-0 font-weight-bold count"></h4>
               <p class="text-muted">Years Experience</p>
             </div>
           </div>
@@ -2111,13 +2111,49 @@
         </div>
       </div>
     </footer>
+    <button
+      id="scrollTopBtn"
+      onclick="scrollToTop()"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-none"
+      style="z-index: 999999"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
     <script src="../sesionjs/js/owl.carousel.min.js"></script>
-    <script src="../sesionjs/js/owl_carousel.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js.java_tradex.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        navText: [
+          '<i class="fa-solid fa-arrow-right-long"></i>',
+          '<i class="fa-solid fa-arrow-left-long"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 2,
+            nav: true,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

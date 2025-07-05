@@ -1,91 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>User Information</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <body class="p-4">
+    <div class="container">
+      <h1 class="mb-4">User Information</h1>
+      <form id="userForm" name="userForm" class="row g-3 mb-4">
+        <div class="col-md-4">
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            name="id"
+            class="form-control"
+            placeholder="Enter ID"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            name="balance"
+            class="form-control"
+            placeholder="Enter Balance"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <input type="submit" value="Add User" class="btn btn-primary" />
+        </div>
+      </form>
 
-<body>
+      <table class="table table-bordered table-hover" id="usersTable">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Balance</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
     <script>
-        // var users = [];
-        // function numberOfUsers() {
-        //     var numUser = prompt("How many users do you want to add?");
+      var users = JSON.parse(localStorage.getItem("users")) || [];
+      var form = document.forms["userForm"];
+      var bodyTable = document
+        .getElementById("usersTable")
+        .getElementsByTagName("tbody")[0];
 
-        //     for (var i = 0; i < numUser; i++) {
-        //         var name = prompt("Enter Username");
-        //         var id = prompt("Enter User ID");
-        //         var balance = prompt("Enter User Balance");
+      // عند تحميل الصفحة، اعرض البيانات
+      actionTable();
 
-        //         users.push({ name, id, balance });
-        //     }
+      form.onsubmit = function (e) {
+        e.preventDefault();
 
-        //     console.log("User List:");
-        //     console.table(users);
-        // }
+        var name = form.elements["name"].value.trim();
+        var id = form.elements["id"].value.trim();
+        var balance = form.elements["balance"].value.trim();
 
-        // numberOfUsers();
-
-        var users = [];
-
-        function addUser() {
-            var name = prompt("Enter Username:");
-            var id = prompt("Enter User ID:");
-            var balance = prompt("Enter User Balance:");
-
-            users.push({ name, id, balance });
+        if (name && id && balance) {
+          users.push({ name: name, id: id, balance: balance });
+          form.reset();
+          saveUsers();
+          actionTable();
         }
-        function numberOfUsers() {
+      };
 
+      function actionTable() {
+        bodyTable.innerHTML = "";
 
-            var numUser = parseInt(prompt("How many users do you want to add?"));
+        for (var i = 0; i < users.length; i++) {
+          var user = users[i];
 
-            for (let i = 0; i < numUser; i++) {
-                addUser();
-            }
+          var row = `
+        <tr>
+          <td>${user.name}</td>
+          <td>${user.id}</td>
+          <td>${user.balance}</td>
+          <td class="action_style">
+            <button class="btn btn-sm btn-secondary me-1" onclick="editName(${i})">
+              Edit Name
+            </button>
+            <button class="btn btn-sm btn-warning me-1" onclick="editBalance(${i})">
+              Edit Balance
+            </button>
+            <button class="btn btn-sm btn-danger" onclick="deleteUser(${i})">
+              Delete
+            </button>
+          </td>
+        </tr>
+      `;
 
-            console.log("Initial User List:");
-            console.table(users);
+          bodyTable.innerHTML += row;
         }
+      }
 
-        function editUserBalanceById(users) {
-            var editById = prompt("Enter the ID of the user to edit balance:");
+      function editBalance(index) {
+        var user = users[index];
+        var newBalance = prompt(
+          "Enter new balance for " + user.name + ":",
+          user.balance
+        );
 
-            var user = users.find(item => item.id == editById);
-
-            if (user) {
-                user.balance = prompt(`Enter new balance for ${user.name}:`);
-                console.log(`Balance updated for ${user.name}.`);
-            } else {
-                console.log("User not found.");
-            }
+        if (newBalance !== null && newBalance !== "") {
+          users[index].balance = newBalance;
+          saveUsers();
+          actionTable();
         }
+      }
 
-        function deleteUserById(users) {
-            var deleteById = prompt("Enter the ID of the user to delete:");
+      function editName(index) {
+        var user = users[index];
+        var newName = prompt(
+          "Enter new name for ID: " + user.id + ":",
+          user.name
+        );
 
-            var index = users.findIndex(item => item.id == deleteById);
-
-            if (index !== -1) {
-                var deletedUser = users.splice(index, 1);
-                console.log(`User ${deletedUser.name} deleted.`);
-            } else {
-                console.log("User not found.");
-            }
+        if (newName !== null && newName.trim() !== "") {
+          users[index].name = newName.trim();
+          saveUsers();
+          actionTable();
         }
+      }
 
+      function deleteUser(index) {
+        if (
+          confirm("Are you sure you want to delete " + users[index].name + "?")
+        ) {
+          users.splice(index, 1);
+          saveUsers();
+          actionTable();
+        }
+      }
 
-        numberOfUsers();
-
-        editUserBalanceById(users);
-
-        deleteUserById(users);
-        console.log("Final User List:");
-        console.table(users);
-
-
+      function saveUsers() {
+        localStorage.setItem("users", JSON.stringify(users));
+      }
     </script>
-</body>
 
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
+
+<!-- <script>
+      var users = [];
+
+      function addUser() {
+        var name = prompt("Enter Username:");
+        var id = prompt("Enter User ID:");
+        var balance = prompt("Enter User Balance:");
+
+        users.push({ name, id, balance });
+      }
+      function numberOfUsers() {
+        var numUser = parseInt(prompt("How many users do you want to add?"));
+
+        for (let i = 0; i < numUser; i++) {
+          addUser();
+        }
+
+        console.log("Initial User List:");
+        console.table(users);
+      }
+
+      function editUserBalanceById(users) {
+        var editById = prompt("Enter the ID of the user to edit balance:");
+
+        var user = users.find((item) => item.id == editById);
+
+        if (user) {
+          user.balance = prompt(`Enter new balance for ${user.name}:`);
+          console.log(`Balance updated for ${user.name}.`);
+        } else {
+          console.log("User not found.");
+        }
+      }
+
+      function deleteUserById(users) {
+        var deleteById = prompt("Enter the ID of the user to delete:");
+
+        var index = users.findIndex((item) => item.id == deleteById);
+
+        if (index !== -1) {
+          var deletedUser = users.splice(index, 1);
+          console.log(`User ${deletedUser.name} deleted.`);
+        } else {
+          console.log("User not found.");
+        }
+      }
+
+      numberOfUsers();
+
+      editUserBalanceById(users);
+
+      deleteUserById(users);
+      console.log("Final User List:");
+      console.table(users);
+    </script> -->
