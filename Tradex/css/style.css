@@ -55,7 +55,7 @@ a {
   text-align: left;
 }
 
-.hover_drop:hover > .dropdown_hover {
+.hover_drop:hover>.dropdown_hover {
   opacity: 1;
   transform: translateX(0);
   visibility: visible;
@@ -78,10 +78,6 @@ a {
   width: 25%;
   padding: 15px 0;
   border-right: 1px solid #ebebeb;
-}
-
-.carousel-item {
-  cursor: grab;
 }
 
 .custom-btn {
@@ -118,8 +114,53 @@ a {
   height: 100%;
 }
 
-.padding_spicial {
-  padding: 20% 0;
+.bg_img_owl1,
+.bg_img_owl2,
+.bg_img_owl3,
+.bg_img_owl4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: grab;
+}
+
+.bg_img_owl1 {
+  background-image: url(../image/slider1.jpg);
+}
+
+.bg_img_owl2 {
+  background-image: url(../image/slider2.jpg);
+}
+
+.bg_img_owl3 {
+  background-image: url(../image/slider3.jpg);
+}
+
+.bg_img_owl4 {
+  background-image: url(../image/slider4.jpg);
+}
+
+.overly_owl {
+  background-color: #00000058;
+  padding: 20%;
+}
+
+.paddingtb {
+  padding: 12.8% 0;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: block !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border-radius: 1px !important;
 }
 
 .details_box {
@@ -207,15 +248,12 @@ a {
 }
 
 section#subscribe input.form-control {
-  width: 70% !important;
   padding: 12px 20px;
 }
 
 section#subscribe .btn {
   border-radius: 25px;
-  width: 17%;
   font-size: 20px;
-  padding: 13px 0px 11px;
 }
 
 .project-card {
@@ -281,6 +319,11 @@ section#subscribe .btn {
 
 .team_theme .card:hover p {
   opacity: 1;
+}
+
+#pricing .nav-item {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .crds_flex hr {
@@ -387,6 +430,10 @@ section#subscribe .btn {
 
 .shadow_card {
   box-shadow: 0 0 10px 0 #b19b83;
+}
+
+#meet_our_clients .row{
+  margin-left: 3%;
 }
 
 .partner_img {
