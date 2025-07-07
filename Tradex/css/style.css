@@ -10,6 +10,52 @@ a {
   text-decoration: none;
 }
 
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-wrapper {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+
+.loader-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loader-blue {
+  background-color: #007bff;
+  left: 0;
+}
+
+.loader-black {
+  background-color: #222;
+  right: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .mx_w_num {
   max-width: 855px;
   margin: 20px auto 60px;
@@ -114,6 +160,14 @@ a {
   height: 100%;
 }
 
+/* #bgImg .owl-carousel.owl-drag .owl-item{
+  height: 500px;
+} */
+
+.height_section_image_owl{
+  height: 100vh;
+}
+
 .bg_img_owl1,
 .bg_img_owl2,
 .bg_img_owl3,
@@ -139,14 +193,14 @@ a {
 .bg_img_owl4 {
   background-image: url(../image/slider4.jpg);
 }
+.height_100{
+  height: 100%;
+}
 
 .overly_owl {
   background-color: #00000058;
+  height: 100%;
   padding: 20%;
-}
-
-.paddingtb {
-  padding: 12.8% 0;
 }
 
 .owl-dots {
@@ -161,6 +215,10 @@ a {
 
 .owl-theme .owl-dots .owl-dot span {
   border-radius: 1px !important;
+}
+
+#bgImg .owl-nav{
+  display: none;
 }
 
 .details_box {
@@ -350,6 +408,24 @@ section#subscribe .btn {
   box-shadow: 0 0 25px 0 #00000040;
 }
 
+.text_primary {
+  color: #0c65ed;
+}
+
+.border_radius {
+  border-radius: 50px;
+  border-color: #0c65ed;
+}
+
+.color_text {
+  color: #0c65ed;
+}
+
+.line_h {
+  line-height: 25px;
+  color: #666666;
+}
+
 .px_spicial {
   padding: 0 15%;
   opacity: 0;
@@ -363,13 +439,13 @@ section#subscribe .btn {
   transform: translateY(0);
 }
 
-.owl-nav {
-  display: flex;
+#testimonial .owl-nav {
+  display: flex !important;
   align-items: center;
   justify-content: center;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+#testimonial .owl-carousel .owl-nav button.owl-prev {
   margin-right: 1%;
 }
 
@@ -378,8 +454,8 @@ section#subscribe .btn {
   height: 100%;
 }
 
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
+#testimonial .owl-carousel .owl-nav button.owl-next,
+#testimonial .owl-carousel .owl-nav button.owl-prev {
   background-color: blue !important;
   color: white !important;
   border: none !important;
@@ -405,12 +481,22 @@ section#subscribe .btn {
   transform: scale(1.1) rotate(3deg);
 }
 
+#latest_blog .hover_bg_icon {
+  border-radius: 5px;
+  width: 10%;
+}
+
+#latest_blog .card-body {
+  padding: 12px 12px 1px 12px;
+}
+
 #latest_blog .card:hover .hover_bg_icon {
   background-color: blue !important;
 }
 
 #latest_blog hr {
   width: 25%;
+  opacity: 1;
   border-color: blue !important;
   border-width: 3px;
   transition: 0.4s;
@@ -432,7 +518,7 @@ section#subscribe .btn {
   box-shadow: 0 0 10px 0 #b19b83;
 }
 
-#meet_our_clients .row{
+#meet_our_clients .row {
   margin-left: 3%;
 }
 
@@ -473,7 +559,7 @@ section#subscribe .btn {
 #grate_work .div_icon_postion {
   position: absolute;
   left: 12%;
-  font-size: 45px;
+  font-size: 30px;
   top: 50%;
   transform: translateY(-45%);
   opacity: 0.3;
@@ -482,6 +568,34 @@ section#subscribe .btn {
 footer .height_spicial {
   height: 50px;
   width: 90px;
+}
+
+hr.footer_hr {
+  opacity: 1;
+  margin-left: 0;
+  margin-top: 0;
+  width: 20%;
+  border-color: #0c65ed;
+  border-width: 3px;
+}
+
+.border_footer_center {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #464646;
+}
+
+.style_a_footer {
+  border-radius: 50px;
+  transition: 1s;
+}
+
+.style_a_footer:hover {
+  background-color: #0c65ed !important;
+  color: #fff !important;
+}
+
+.shadow_footer {
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* contact style page */

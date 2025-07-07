@@ -1,93 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <title>User Information</title>
-  </head>
 
-  <body class="p-4">
-    <div class="container">
-      <h1 class="mb-4">User Information</h1>
-      <form id="userForm" name="userForm" class="row g-3 mb-4">
-        <div class="col-md-4">
-          <input
-            type="text"
-            name="name"
-            class="form-control"
-            placeholder="Enter Name"
-            required
-          />
-        </div>
-        <div class="col-md-4">
-          <input
-            type="text"
-            name="id"
-            class="form-control"
-            placeholder="Enter ID"
-            required
-          />
-        </div>
-        <div class="col-md-4">
-          <input
-            type="text"
-            name="balance"
-            class="form-control"
-            placeholder="Enter Balance"
-            required
-          />
-        </div>
-        <div class="col-12">
-          <input type="submit" value="Add User" class="btn btn-primary" />
-        </div>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <title>User Information</title>
+</head>
 
-      <table class="table table-bordered table-hover" id="usersTable">
-        <thead class="table-dark">
-          <tr>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Balance</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+<body class="p-4">
+  <div class="container">
+    <h1 class="mb-4">User Information</h1>
+    <form id="userForm" name="userForm" class="row g-3 mb-4">
+      <div class="col-md-4">
+        <input type="text" name="name" class="form-control" placeholder="Enter Name" required />
+      </div>
+      <div class="col-md-4">
+        <input type="text" name="id" class="form-control" placeholder="Enter ID" required />
+      </div>
+      <div class="col-md-4">
+        <input type="text" name="balance" class="form-control" placeholder="Enter Balance" required />
+      </div>
+      <div class="col-12">
+        <input type="submit" value="Add User" class="btn btn-primary" />
+      </div>
+    </form>
 
-    <script>
-      var users = JSON.parse(localStorage.getItem("users")) || [];
-      var form = document.forms["userForm"];
-      var bodyTable = document
-        .getElementById("usersTable")
-        .getElementsByTagName("tbody")[0];
+    <table class="table table-bordered table-hover" id="usersTable">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
-      // عند تحميل الصفحة، اعرض البيانات
-      actionTable();
+  <script>
+    var dataBankUsers;
+    if (localStorage.getItem("dataBankUsers")) {
+      dataBankUsers = JSON.parse(localStorage.getItem("dataBankUsers"));
+    } else {
+      dataBankUsers = [];
+    }
+    var form = document.forms["userForm"];
+    var bodyTable = document
+      .getElementById("usersTable")
+      .getElementsByTagName("tbody")[0];
 
-      form.onsubmit = function (e) {
-        e.preventDefault();
+    actionTable();
 
-        var name = form.elements["name"].value.trim();
-        var id = form.elements["id"].value.trim();
-        var balance = form.elements["balance"].value.trim();
+    form.onsubmit = function (e) {
+      e.preventDefault();
 
-        if (name && id && balance) {
-          users.push({ name: name, id: id, balance: balance });
-          form.reset();
-          saveUsers();
-          actionTable();
-        }
-      };
+      var name = form.elements["name"].value.trim();
+      var id = form.elements["id"].value.trim();
+      var balance = form.elements["balance"].value.trim();
 
-      function actionTable() {
-        bodyTable.innerHTML = "";
+      if (name && id && balance) {
+        dataBankUsers.push({ name: name, id: id, balance: balance });
+        form.reset();
+        saveUsers();
+        actionTable();
+      }
+    };
 
-        for (var i = 0; i < users.length; i++) {
-          var user = users[i];
+    function actionTable() {
+      bodyTable.innerHTML = "";
 
-          var row = `
+      for (var i = 0; i < dataBankUsers.length; i++) {
+        var user = dataBankUsers[i];
+
+        var action_buttons = `
         <tr>
           <td>${user.name}</td>
           <td>${user.id}</td>
@@ -106,55 +93,56 @@
         </tr>
       `;
 
-          bodyTable.innerHTML += row;
-        }
+        bodyTable.innerHTML += action_buttons;
       }
+    }
 
-      function editBalance(index) {
-        var user = users[index];
-        var newBalance = prompt(
-          "Enter new balance for " + user.name + ":",
-          user.balance
-        );
+    function editBalance(index) {
+      var user = dataBankUsers[index];
+      var newBalance = prompt(
+        "Enter new balance for " + user.name + ":",
+        user.balance
+      );
 
-        if (newBalance !== null && newBalance !== "") {
-          users[index].balance = newBalance;
-          saveUsers();
-          actionTable();
-        }
+      if (newBalance !== null && newBalance !== "") {
+        dataBankUsers[index].balance = newBalance;
+        saveUsers();
+        actionTable();
       }
+    }
 
-      function editName(index) {
-        var user = users[index];
-        var newName = prompt(
-          "Enter new name for ID: " + user.id + ":",
-          user.name
-        );
+    function editName(index) {
+      var user = dataBankUsers[index];
+      var newName = prompt(
+        "Enter new name for ID: " + user.id + ":",
+        user.name
+      );
 
-        if (newName !== null && newName.trim() !== "") {
-          users[index].name = newName.trim();
-          saveUsers();
-          actionTable();
-        }
+      if (newName !== null && newName.trim() !== "") {
+        dataBankUsers[index].name = newName.trim();
+        saveUsers();
+        actionTable();
       }
+    }
 
-      function deleteUser(index) {
-        if (
-          confirm("Are you sure you want to delete " + users[index].name + "?")
-        ) {
-          users.splice(index, 1);
-          saveUsers();
-          actionTable();
-        }
+    function deleteUser(index) {
+      if (
+        confirm("Are you sure you want to delete " + dataBankUsers[index].name + "?")
+      ) {
+        dataBankUsers.splice(index, 1);
+        saveUsers();
+        actionTable();
       }
+    }
 
-      function saveUsers() {
-        localStorage.setItem("users", JSON.stringify(users));
-      }
-    </script>
+    function saveUsers() {
+      localStorage.setItem("dataBankUsers", JSON.stringify(dataBankUsers));
+    }
+  </script>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
 
 <!-- <script>
