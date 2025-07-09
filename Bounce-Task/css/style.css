@@ -81,6 +81,22 @@
         font-size: 20px !important;
     }
 
+    .scroll-indicator {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        align-items: center;
+        transform: rotate(180deg);
+        color: #adb5bd;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .transform {
+        transform: rotate(180deg);
+    }
+
     .spicial_abs {
         width: 40%;
         top: 88%;
@@ -148,7 +164,7 @@
         box-shadow: 0 0 13px rgb(108 117 125 / 21%);
     }
 
-    .blogs .bg-warning{
+    .blogs .bg-warning {
         top: 95%;
         left: 40%
     }

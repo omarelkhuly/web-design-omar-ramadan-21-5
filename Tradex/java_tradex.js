@@ -1,18 +1,22 @@
-// loading
+//loading
 function hideLoader() {
   var loaders = document.getElementsByClassName("loading");
   setTimeout(function () {
-    if (loaders.length > 0) {
-      loaders[0].classList.add("d-none");
+    if (loaders.length > 0 && loaders[0]) {
+      if (loaders[0].classList) {
+        loaders[0].classList.add("d-none");
+      }
     }
   }, 1000);
 }
+window.addEventListener("load", hideLoader);
 
 //Form Validation
 function validateForm(event) {
   event.preventDefault();
 
   const form = document.forms["contactForm"];
+  if (!form) return false;
 
   const nameInput = form.elements["name"];
   const emailInput = form.elements["email"];
@@ -23,6 +27,7 @@ function validateForm(event) {
   const emailError = document.getElementById("emailError");
   const subjectError = document.getElementById("subjectError");
   const messageError = document.getElementById("messageError");
+  const successMessage = document.getElementById("successMessage");
 
   const nameRegex = /^[a-zA-Z\s]{2,}$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -31,38 +36,39 @@ function validateForm(event) {
 
   let valid = true;
 
-  // Check each field for emptiness first
-  if (nameInput.value.trim() === "") {
-    nameError.textContent = "This field is required.";
+  if (nameInput && nameInput.value.trim() === "") {
+    if (nameError) nameError.textContent = "This field is required.";
     valid = false;
   }
 
-  if (emailInput.value.trim() === "") {
-    emailError.textContent = "This field is required.";
+  if (emailInput && emailInput.value.trim() === "") {
+    if (emailError) emailError.textContent = "This field is required.";
     valid = false;
   }
 
-  if (subjectInput.value.trim() === "") {
-    subjectError.textContent = "This field is required.";
+  if (subjectInput && subjectInput.value.trim() === "") {
+    if (subjectError) subjectError.textContent = "This field is required.";
     valid = false;
   }
 
-  if (messageInput.value.trim() === "") {
-    messageError.textContent = "This field is required.";
+  if (messageInput && messageInput.value.trim() === "") {
+    if (messageError) messageError.textContent = "This field is required.";
     valid = false;
   }
 
-  if (valid) {
-    document.getElementById("successMessage").classList.remove("d-none");
-    document.getElementById("successMessage").textContent = "Message sent successfully!";
+  if (valid && successMessage) {
+    successMessage.classList.remove("d-none");
+    successMessage.textContent = "Message sent successfully!";
+    form.reset();
   }
 
   return valid;
 }
 
-// Add focus and input events for live validation
+//Live validation after DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.forms["contactForm"];
+  if (!form) return;
 
   const fields = [
     {
@@ -92,6 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   fields.forEach(({ input, error, regex, message }) => {
+    if (!input || !error) return;
+
     input.addEventListener("focus", () => {
       if (input.value.trim() === "") {
         error.textContent = message;
@@ -110,54 +118,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-//Counter Animation
-let counted = true;
+var counted = true;
 
 function animateCount(element, start, end, totalTime) {
   if (!counted) return;
 
-  let current = start;
-  const steps = 60;
-  const stepValue = (end - start) / steps;
-  const stepTime = totalTime / steps;
+  var numCount = start;
+  const range = end - start;
+  const numUpdate = 60;
+  const amoSteps = range / numUpdate;
+  const timeWait = totalTime / numUpdate;
 
   const timer = setInterval(() => {
-    current += stepValue;
-    if (current >= end) {
+    numCount += amoSteps;
+
+    if (numCount >= end) {
       element.textContent = end;
       clearInterval(timer);
       counted = false;
     } else {
-      element.textContent = Math.floor(current);
+      element.textContent = Math.floor(numCount);
     }
-  }, stepTime);
+  }, timeWait);
 }
 
-//Scroll Events
 window.onscroll = function () {
   toggleScrollButton();
-
   if (document.documentElement.scrollTop > 600 && counted) {
     const counters = document.getElementsByClassName("count");
 
-    if (counters.length >= 4) {
-      animateCount(counters[0], 0, 8000, 5000);
-      animateCount(counters[1], 0, 810, 5000);
-      animateCount(counters[2], 0, 3000, 5000);
-      animateCount(counters[3], 0, 20, 5000);
+    if(counters.length >=4){
+      animateCount(counters[0], 0, 8000, 10000);
+      animateCount(counters[1], 0, 810, 10000);
+      animateCount(counters[2], 0, 3000, 10000);
+      animateCount(counters[3], 0, 20, 10000);
     }
   }
 };
+
 
 //Scroll To Top Button
 function toggleScrollButton() {
   const scrollBtn = document.getElementById("scrollTopBtn");
   if (!scrollBtn) return;
 
-  const scrollTop =
-    document.documentElement.scrollTop || document.body.scrollTop;
-
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   scrollBtn.classList.toggle("d-none", scrollTop <= 500);
 }
 
