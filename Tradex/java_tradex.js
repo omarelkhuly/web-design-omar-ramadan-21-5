@@ -11,6 +11,16 @@ function hideLoader() {
 }
 window.addEventListener("load", hideLoader);
 
+const header = document.getElementById("mainHeader");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    header.classList.add("sticky-top");
+  } else {
+    header.classList.remove("sticky-top");
+  }
+});
+
 //Form Validation
 function validateForm(event) {
   event.preventDefault();
@@ -147,7 +157,7 @@ window.onscroll = function () {
   if (document.documentElement.scrollTop > 600 && counted) {
     const counters = document.getElementsByClassName("count");
 
-    if(counters.length >=4){
+    if (counters.length >= 4) {
       animateCount(counters[0], 0, 8000, 10000);
       animateCount(counters[1], 0, 810, 10000);
       animateCount(counters[2], 0, 3000, 10000);

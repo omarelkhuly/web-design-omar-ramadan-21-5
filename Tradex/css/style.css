@@ -67,6 +67,23 @@ a {
   border-color: #0c65ed;
 }
 
+.sticky-top {
+  animation: slideInDown;
+  animation-duration: 0.6s;
+  box-shadow: 0 0 20px -7px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .font_family {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -215,8 +232,14 @@ a {
 
 #bgImg button.owl-dot {
   display: block;
-  width: 3px;
-  height: 3px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff7c;
+  margin: 40%;
+}
+
+#bgImg button.owl-dot.active {
+  background-color: white;
 }
 
 #bgImg button.owl-dot span {
